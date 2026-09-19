@@ -5,7 +5,7 @@ const config = [
   ...nextVitals,
   ...nextTypescript,
   {
-    ignores: ['data/**/*.json', 'public/report/**']
+    ignores: ['data/**/*.json', 'public/report/**', 'observable/dist/**', '.observable/**']
   },
   {
     // The replay engine, its scripts and the build config are CommonJS on purpose:
