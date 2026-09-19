@@ -1,0 +1,29 @@
+# dependencies
+/node_modules
+/.pnpm
+
+# next.js build output
+/.next/
+/out/
+/build
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# datasets: only the reproducible sample is tracked.
+# Full captures and simulation outputs stay local.
+/data/*.json
+!/data/sample-data.json

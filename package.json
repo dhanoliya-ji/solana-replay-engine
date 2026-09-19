@@ -1,0 +1,43 @@
+{
+  "name": "solana-replay-engine",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "clean:dev": "node --input-type=commonjs -e \"require('fs').rmSync('.next/dev',{recursive:true,force:true})\"",
+    "predev": "npm run clean:dev",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "sim": "node engine/simulateCopyTradingMcTpSlTrail.js data/sample-data.json",
+    "report:data": "node scripts/export-metrics.js"
+  },
+  "dependencies": {
+    "lightweight-charts": "^5.2.0",
+    "next": "^16.2.11",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.34.0",
+    "eslint-config-next": "^16.2.11",
+    "postcss": "8.5.21",
+    "tailwind-motionkit": "^1.0.3",
+    "tailwindcss": "3.4.17",
+    "typescript": "^5.9.2"
+  },
+  "overrides": {
+    "postcss": "8.5.21",
+    "sharp": "0.35.0"
+  },
+  "description": "Replay-based copy-trading simulator for Solana bonding-curve tokens, with a dry-run live mainnet monitor.",
+  "license": "MIT"
+}
