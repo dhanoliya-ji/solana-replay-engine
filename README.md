@@ -1,56 +1,58 @@
 # Solana Replay Engine
 
-A replay-based copy-trading simulator for Solana bonding-curve tokens, with a Next.js
-analysis dashboard and a live mainnet monitor that runs strictly in dry run.
 
-It answers one question honestly: **if you mirror a profitable pump.fun wallet trade for
-trade, one slot behind, do you make money?**
+A replay-based copy-trading simulator for Solana bonding-curve tokens,
+with a Next.js analysis dashboard and a live mainnet monitor that runs
+strictly in dry run.
+
+It answers one question honestly: **if you mirror a profitable pump.fun
+wallet trade for trade, one slot behind, do you make money?**
 
 The answer, on this dataset, is no — and the reason is not the strategy.
 
-```
-Baseline, 68 round trips mirroring a profitable wallet
-  Total PnL       −5.930 SOL        Win rate        25.0%
-  Profit factor    0.31             Max drawdown     5.93 SOL
-  Median hold      11.7 s           Fees paid        1.57 SOL
+    Baseline, 68 round trips mirroring a profitable wallet
+      Total PnL       −5.930 SOL        Win rate        25.0%
+      Profit factor    0.31             Max drawdown     5.93 SOL
+      Median hold      11.7 s           Fees paid        1.57 SOL
 
-Same 68 trades, entered at the target wallet's own price
-  Total PnL       +2.402 SOL
+    Same 68 trades, entered at the target wallet's own price
+      Total PnL       +2.402 SOL
 
-  Cost of one slot of latency:  8.33 SOL
-```
+      Cost of one slot of latency:  8.33 SOL
 
-67 of 68 entries fill at a **worse** price than the wallet being copied — a median of
-13.5% higher market cap. No exit parameter recovers that. All 80 take-profit /
-stop-loss combinations tested lose money.
+67 of 68 entries fill at a **worse** price than the wallet being copied
+— a median of 13.5% higher market cap. No exit parameter recovers that.
+All 80 take-profit / stop-loss combinations tested lose money.
 
-📊 **[Read the full results report](public/report/report.ojs)** — an Observable
-notebook with the equity curve, per-trade breakdown, exit attribution, parameter
-heatmap and latency analysis. Run `npm run dev` and open
+📊 **[Read the full results report](report/report.qmd)** — equity curve,
+per-trade breakdown, exit attribution, parameter heatmap and latency
+analysis. Run `npm run dev` and open
 [`/report`](http://localhost:3000/report) to view it rendered.
 
 📋 **[Problem statement and objectives](PROBLEM_STATEMENT.md)**
 
----
+------------------------------------------------------------------------
 
 ## Why this exists
 
-Copy-trading backtests usually replay the target wallet's trades and report what those
-trades returned. That measures the *target's* performance and quietly assumes the copier
-fills at the same price — which is impossible, because a bot must see a transaction
-before it can react to one.
+Copy-trading backtests usually replay the target wallet’s trades and
+report what those trades returned. That measures the *target’s*
+performance and quietly assumes the copier fills at the same price —
+which is impossible, because a bot must see a transaction before it can
+react to one.
 
-On a bonding curve that assumption is not a rounding error. The target's own buy moves
-the curve inside the slot you are still reacting to, and so does every other bot chasing
-the same signal. This engine enters on the **slot after** the target's fill and prices
-it off the actual reserves, so the number it reports is the one a copier would have
-lived with.
+On a bonding curve that assumption is not a rounding error. The target’s
+own buy moves the curve inside the slot you are still reacting to, and
+so does every other bot chasing the same signal. This engine enters on
+the **slot after** the target’s fill and prices it off the actual
+reserves, so the number it reports is the one a copier would have lived
+with.
 
 ## Quickstart
 
 Requires **Node.js 20+**.
 
-```bash
+``` bash
 git clone https://github.com/<you>/solana-replay-engine.git
 cd solana-replay-engine
 npm install
@@ -62,41 +64,41 @@ npm run dev                    # dashboard at http://localhost:3000
 
 Run the engine headless, without the dashboard:
 
-```bash
+``` bash
 npm run sim                    # replay data/sample-data.json, print a summary
 npm run report:data            # re-derive every figure in the report
+npm run report                 # re-render the report (needs Quarto)
 ```
 
-`data/sample-data.json` ships with the repository: 68 tokens, 26,685 recorded trades.
-The engine only ever trades mints the target wallet touched, so this sample reproduces
-the full 2,498-token capture **exactly** — every number above and in the report is
-reproducible from a fresh clone.
+`data/sample-data.json` ships with the repository: 68 tokens, 26,685
+recorded trades. The engine only ever trades mints the target wallet
+touched, so this sample reproduces the full 2,498-token capture
+**exactly** — every number above and in the report is reproducible from
+a fresh clone.
 
 ## What it does
 
-**Replay engine** (`engine/`)
-- Reconstructs every fill from the constant-product bonding curve using the virtual
-  token and SOL reserves recorded at that slot, in `BigInt` arithmetic.
-- Mirrors the target wallet's `BUY` and `SWAP` fills, entering on the next slot.
-- Closes positions with seven competing exit rules and records which one fired.
-- Accounts for fees at 1.5% per side.
+**Replay engine** (`engine/`) - Reconstructs every fill from the
+constant-product bonding curve using the virtual token and SOL reserves
+recorded at that slot, in `BigInt` arithmetic. - Mirrors the target
+wallet’s `BUY` and `SWAP` fills, entering on the next slot. - Closes
+positions with seven competing exit rules and records which one fired. -
+Accounts for fees at 1.5% per side.
 
-**Dashboard** (`src/`)
-- Load datasets from `data/` or by browser upload; both shapes (mint-keyed object and
-  array) are normalised to one internal format.
-- Configure every strategy parameter and run the engine as a background job with
-  progress streaming.
-- Compare simulated results against the target wallet's own results per token — shared,
-  missed, and solo positions.
-- Inspect candlestick charts, an activity tape, trade detail, and bucketed
-  distributions.
-- Track multiple analysis wallets, persisted in local storage and kept separate from the
-  wallet being copied.
+**Dashboard** (`src/`) - Load datasets from `data/` or by browser
+upload; both shapes (mint-keyed object and array) are normalised to one
+internal format. - Configure every strategy parameter and run the engine
+as a background job with progress streaming. - Compare simulated results
+against the target wallet’s own results per token — shared, missed, and
+solo positions. - Inspect candlestick charts, an activity tape, trade
+detail, and bucketed distributions. - Track multiple analysis wallets,
+persisted in local storage and kept separate from the wallet being
+copied.
 
-**Live monitor** (`src/lib/simulation/live-monitor.ts`)
-- Runs the same risk model against a live Solana mainnet RPC feed.
-- Tracks open positions, realised PnL, win rate and a structured log in memory.
-- **Dry run only** — see [Safety](#safety).
+**Live monitor** (`src/lib/simulation/live-monitor.ts`) - Runs the same
+risk model against a live Solana mainnet RPC feed. - Tracks open
+positions, realised PnL, win rate and a structured log in memory. -
+**Dry run only** — see [Safety](#safety).
 
 ## The exit model
 
@@ -105,7 +107,7 @@ A position is closed by whichever rule fires first. Defaults live in
 and every one is overridable from the dashboard or the API.
 
 | Rule | Default | Fires when |
-|---|---|---|
+|----|----|----|
 | Take profit | +180% | Unrealised gain reaches the target |
 | Stop loss | −35% | Unrealised loss reaches the limit |
 | Trailing stop | −28% from peak | Price falls this far from its peak, once the peak exceeded +45% |
@@ -114,150 +116,141 @@ and every one is overridable from the dashboard or the API.
 | Momentum failure | −12% after 240 s | Position has not developed |
 | Holder concentration | top 55% / top-3 82% | Supply is dangerously concentrated |
 
-Entry is additionally gated by an optional market-cap window (`minMcSol` / `maxMcSol`),
-off by default.
+Entry is additionally gated by an optional market-cap window (`minMcSol`
+/ `maxMcSol`), off by default.
 
-**What the measurements say about these rules:** stop-loss fired on 38 of 68 exits and
-accounts for effectively the entire loss. Trailing stop (+1.49 SOL over 15 exits) and
-take-profit (+1.12 SOL over 2) are both net positive. The exit logic works on positions
-that survive long enough to use it; the damage is done at entry.
+**What the measurements say about these rules:** stop-loss fired on 38
+of 68 exits and accounts for effectively the entire loss. Trailing stop
+(+1.49 SOL over 15 exits) and take-profit (+1.12 SOL over 2) are both
+net positive. The exit logic works on positions that survive long enough
+to use it; the damage is done at entry.
 
 ## Configuration
 
 Copy `.env.example` to `.env.local`:
 
 | Variable | Default | Purpose |
-|---|---|---|
+|----|----|----|
 | `TARGET_WALLET` | `DDDD2zvz…3R5R` | The wallet whose fills are mirrored |
 | `BUY_AMOUNT_SOL` | `0.8` | Simulated position size per entry |
 | `SOLANA_RPC_ENDPOINT` | `api.mainnet-beta.solana.com` | Feed for the live monitor |
 
-The public RPC endpoint is heavily rate limited; point `SOLANA_RPC_ENDPOINT` at your own
-provider for sustained monitoring.
+The public RPC endpoint is heavily rate limited; point
+`SOLANA_RPC_ENDPOINT` at your own provider for sustained monitoring.
 
 ## Safety
 
-The live monitor connects to Solana mainnet and reads real transactions. It **cannot
-trade**:
+The live monitor connects to Solana mainnet and reads real transactions.
+It **cannot trade**:
 
 - No transaction is ever constructed, signed, or broadcast.
-- No private key, keypair file, or wallet adapter is imported anywhere in the codebase.
-- Positions, fills and PnL are computed in memory from observed reserve state, using the
-  same bonding-curve code path as historical replay.
+- No private key, keypair file, or wallet adapter is imported anywhere
+  in the codebase.
+- Positions, fills and PnL are computed in memory from observed reserve
+  state, using the same bonding-curve code path as historical replay.
 
-The system is incapable of spending, rather than merely configured not to. Read-only RPC
-methods are the only ones used.
+The system is incapable of spending, rather than merely configured not
+to. Read-only RPC methods are the only ones used.
 
 ## Project structure
 
-```
-engine/                        Replay engine (CommonJS, runnable standalone)
-  simulateCopyTradingMcTpSlTrail.js    Bonding curve, fills, position lifecycle
-  strategies/                          Strategy parameters and exit rules
+    engine/                        Replay engine (CommonJS, runnable standalone)
+      simulateCopyTradingMcTpSlTrail.js    Bonding curve, fills, position lifecycle
+      strategies/                          Strategy parameters and exit rules
 
-src/
-  app/api/                     Routes: dataset loading, simulation jobs, live monitor
-  components/dashboard/        Workspace, charts, tables, panels
-  lib/data/                    Local file loading and dataset normalisation
-  lib/simulation/              Engine bridge, job store, live monitor
-  lib/analytics/               Target-vs-simulated comparison, distributions
-  types/domain.ts              Shared domain contracts
+    src/
+      app/api/                     Routes: dataset loading, simulation jobs, live monitor
+      components/dashboard/        Workspace, charts, tables, panels
+      lib/data/                    Local file loading and dataset normalisation
+      lib/simulation/              Engine bridge, job store, live monitor
+      lib/analytics/               Target-vs-simulated comparison, distributions
+      types/domain.ts              Shared domain contracts
 
-scripts/export-metrics.js      Regenerates the report's dataset
-public/report/                 Observable report (.ojs) + its runner page
-data/sample-data.json          Committed dataset; reproduces the full capture
-```
+    report/                        Quarto report
+      report.qmd                          Prose + executable {ojs} figure cells
+      metrics.json                        Generated: everything the report claims
+    scripts/export-metrics.js      Regenerates report/metrics.json
+    public/report/index.html       Rendered report, self-contained and committed
+    data/sample-data.json          Committed dataset; reproduces the full capture
 
-The engine is deliberately kept outside `src/` and free of framework imports: it runs
-under plain `node`, and the dashboard loads it through a thin bridge
-(`src/lib/simulation/bridge.ts`). The analysis does not depend on the UI.
+The engine is deliberately kept outside `src/` and free of framework
+imports: it runs under plain `node`, and the dashboard loads it through
+a thin bridge (`src/lib/simulation/bridge.ts`). The analysis does not
+depend on the UI.
 
 ## The report
 
-[`public/report/report.ojs`](public/report/report.ojs) is an
-[Observable](https://observablehq.com/) notebook — the analysis is live code, not
-transcribed figures. Named cells hold data and helpers and render nothing; anonymous
-cells are the prose and charts. `public/report/index.html` runs it with the Observable
-runtime and Plot.
+[`report/report.qmd`](report/report.qmd) is a
+[Quarto](https://quarto.org) document: the prose is markdown, the
+figures are executable `{ojs}` cells, and every number in the text is an
+inline expression read from `report/metrics.json` at render time.
+Nothing in it is transcribed by hand.
 
-Because `.ojs` does not render on GitHub, view it served:
-
-```bash
-npm run dev            # then open http://localhost:3000/report
+``` bash
+npm run report:data      # re-derive report/metrics.json from the engine
+npm run report           # render report/report.html
+npm run report:preview   # live-reloading preview while editing
+npm run docs             # re-render README.qmd and PROBLEM_STATEMENT.qmd
 ```
 
-To re-derive it after changing the engine, the strategy, or the dataset:
+`.qmd` is the source everywhere: `README.md` and `PROBLEM_STATEMENT.md`
+are generated from their `.qmd` counterparts so GitHub still renders
+them. Edit the `.qmd`.
 
-```bash
-npm run report:data    # rewrites public/report/metrics.json
-```
+The rendered output is committed to `public/report/index.html`, so the
+report is viewable from a clone without Quarto installed, and
+`npm run dev` serves it at [`/report`](http://localhost:3000/report).
 
-The report reads that file at load time, so the charts and every number in the prose
-update together. Nothing in it is hand-written.
+Two things about that file are worth knowing, because neither is
+obvious:
 
-### Publishing it to Observable
+- **It must be served over HTTP.** Opening it from disk fails - the OJS
+  runtime cannot initialise under `file://` and the page renders with no
+  figures. Use `npm run dev`, or any static server.
+- **Figures need network access at view time.** `embed-resources: true`
+  inlines the styles, the Quarto runtime and `metrics.json`, but
+  Observable Plot and d3 are fetched from a CDN when the page loads, so
+  the charts do not draw offline.
 
-`npm run report:observable` regenerates two publishable forms of the same notebook from
-`public/report/report.ojs`, so there is still one source of truth:
-
-| File | For |
-|---|---|
-| [`observable/report-observable.ojs`](observable/report-observable.ojs) | observablehq.com — cells separated and numbered, because the classic platform has no multi-cell import |
-| [`observable/report-notebook.html`](observable/report-notebook.html) | [Observable Notebooks 2.0](https://observablehq.com/notebook-kit/) — a single file that opens in Observable Desktop or builds with `@observablehq/notebook-kit` |
-
-Both fetch `metrics.json` over HTTPS from this repository rather than from a local path
-or a file attachment, so a pasted notebook works with no further setup.
-
-**observablehq.com** has no multi-cell import, so `report-observable.ojs` is pasted a
-cell at a time: open a new notebook, paste a numbered block, press Shift+Enter, repeat.
-Cell order does not matter — Observable resolves by dependency, not position.
-
-**Notebooks 2.0** runs the single HTML file locally, on any platform:
-
-```bash
-npm run notebook          # preview at http://localhost:5173/report-notebook
-npm run notebook:build    # static site in observable/dist/
-```
-
-Observable Desktop opens the same file directly, but is macOS-only at present; the CLI
-above is the cross-platform path. The default template pulls its typography from the
-`@fontsource-variable/*` packages, which is why they are devDependencies — running
-`notebook-kit` through `npx` alone fails to resolve them.
+Quarto is a standalone CLI, not an npm package - install it from
+[quarto.org](https://quarto.org/docs/get-started/) if you want to
+re-render.
 
 ## Milestones
 
-| # | Milestone | What it unlocked |
-|---|---|---|
+| \# | Milestone | What it unlocked |
+|----|----|----|
 | 1 | Bonding-curve fill model in exact integer arithmetic | Fills that match the curve instead of approximating from market-cap snapshots |
 | 2 | Next-slot entry | The delay a copier actually pays became a measured quantity, not an assumption |
 | 3 | Layered exit model with attribution | Every close is traceable to the rule that caused it |
 | 4 | Dataset normalisation across both shapes | Mint-keyed and array captures load through one path |
 | 5 | Next.js dashboard with background simulation jobs | 67 MB datasets run without blocking or re-posting to the server |
-| 6 | Target-vs-simulated comparison | Copier performance separated from the wallet's own |
+| 6 | Target-vs-simulated comparison | Copier performance separated from the wallet’s own |
 | 7 | Live mainnet monitor, dry run | The same risk model validated against real-time data with no execution path |
-| 8 | Parameter sweeps over the full grid | "Tuning does not fix it" became a measurement across 80 cells, not an opinion |
+| 8 | Parameter sweeps over the full grid | “Tuning does not fix it” became a measurement across 80 cells, not an opinion |
 | 9 | Latency counterfactual | Located the loss at entry and quantified it at 8.33 SOL |
 | 10 | Reproducible report from a committed sample | Every published figure re-derivable with one command |
 
 ## Limitations
 
-These bound what the results mean, and all of them make the real outcome worse rather
-than better:
+These bound what the results mean, and all of them make the real outcome
+worse rather than better:
 
-- **One target wallet**, 68 tokens, 26,685 trades. The findings describe this sample,
-  not pump.fun in general.
-- **Fees are flat 1.5% per side.** Priority fees, Jito tips and failed transactions are
-  not modelled.
-- **No competing-bot impact.** Other copiers reacting to the same signal would push the
-  entry price further against us.
-- **Fills assume the replayed reserves absorb the simulated size** with no impact beyond
-  the curve maths.
-- **The zero-latency counterfactual is a bound, not a target.** It assumes a same-slot
-  fill at the same price, which no observe-then-react bot achieves.
+- **One target wallet**, 68 tokens, 26,685 trades. The findings describe
+  this sample, not pump.fun in general.
+- **Fees are flat 1.5% per side.** Priority fees, Jito tips and failed
+  transactions are not modelled.
+- **No competing-bot impact.** Other copiers reacting to the same signal
+  would push the entry price further against us.
+- **Fills assume the replayed reserves absorb the simulated size** with
+  no impact beyond the curve maths.
+- **The zero-latency counterfactual is a bound, not a target.** It
+  assumes a same-slot fill at the same price, which no
+  observe-then-react bot achieves.
 
 ## Development
 
-```bash
+``` bash
 npm run lint        # eslint
 npm run typecheck   # tsc --noEmit
 npm run build       # production build
@@ -267,5 +260,5 @@ npm run build       # production build
 
 MIT — see [LICENSE](LICENSE).
 
-This is research tooling. It is not financial advice, and it does not claim a profitable
-strategy — its headline finding is the opposite.
+This is research tooling. It is not financial advice, and it does not
+claim a profitable strategy — its headline finding is the opposite.

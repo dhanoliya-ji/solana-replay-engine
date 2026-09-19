@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Regenerates public/report/metrics.json - the dataset behind report.ojs.
+ * Regenerates report/metrics.json - the dataset behind report.qmd.
  *
  * Everything the report claims is produced here, from a dataset on disk, so the
  * numbers in the write-up can be re-derived rather than trusted.
@@ -22,7 +22,7 @@ const { runCopyTradingSimulation } = require(path.join(
 ));
 
 const DATASET = process.argv[2] || path.join(ROOT, 'data', 'sample-data.json');
-const OUT = path.join(ROOT, 'public', 'report', 'metrics.json');
+const OUT = path.join(ROOT, 'report', 'metrics.json');
 const TARGET_WALLET =
   process.env.TARGET_WALLET || 'DDDD2zvzaPMLuZiC2Vos2i6TLFjJJ3bi1pN7kXQc3R5R';
 
