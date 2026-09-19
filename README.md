@@ -195,6 +195,19 @@ npm run report:data    # rewrites public/report/metrics.json
 The report reads that file at load time, so the charts and every number in the prose
 update together. Nothing in it is hand-written.
 
+### Publishing it to Observable
+
+`npm run report:observable` regenerates two publishable forms of the same notebook from
+`public/report/report.ojs`, so there is still one source of truth:
+
+| File | For |
+|---|---|
+| [`observable/report-observable.ojs`](observable/report-observable.ojs) | observablehq.com — cells separated and numbered, because the classic platform has no multi-cell import |
+| [`observable/report-notebook.html`](observable/report-notebook.html) | [Observable Notebooks 2.0](https://observablehq.com/notebook-kit/) — a single file that opens in Observable Desktop or builds with `@observablehq/notebook-kit` |
+
+Both fetch `metrics.json` over HTTPS from this repository rather than from a local path
+or a file attachment, so a pasted notebook works with no further setup.
+
 ## Milestones
 
 | # | Milestone | What it unlocked |

@@ -14,7 +14,8 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "sim": "node engine/simulateCopyTradingMcTpSlTrail.js data/sample-data.json",
-    "report:data": "node scripts/export-metrics.js"
+    "report:data": "node scripts/export-metrics.js",
+    "report:observable": "node scripts/build-observable.js"
   },
   "dependencies": {
     "lightweight-charts": "^5.2.0",
@@ -23,6 +24,7 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@alex.garcia/unofficial-observablehq-compiler": "^0.6.0-alpha.9",
     "@types/node": "^24.2.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
