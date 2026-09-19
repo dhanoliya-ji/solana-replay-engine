@@ -1,0 +1,3312 @@
+{
+ "generatedAt": "2026-09-19T18:23:57.247Z",
+ "dataset": {
+  "file": "sample-data.json",
+  "tokenCount": 68,
+  "tradeCount": 26685,
+  "targetWallet": "DDDD2zvzaPMLuZiC2Vos2i6TLFjJJ3bi1pN7kXQc3R5R",
+  "feeRate": 0.015
+ },
+ "baseline": {
+  "stats": {
+   "trades": 68,
+   "totalPnl": -5.930169453835004,
+   "winCount": 17,
+   "winRate": 25,
+   "avgPnl": -0.087208374321103,
+   "medianPnl": -0.15431694696500006,
+   "bestTrade": 0.607130869015,
+   "worstTrade": -0.33227190991000005,
+   "maxDrawdown": 5.930169453835004,
+   "profitFactor": 0.3128225415986174,
+   "grossProfit": 2.6995802292100004,
+   "grossLoss": 8.629749683045002,
+   "capitalDeployed": 54.399999999999935,
+   "returnOnCapitalPct": -10.901046790137887,
+   "pnlPerTradeSd": 0.18298407782863593,
+   "sharpePerTrade": -0.47658995993505726,
+   "totalFees": 1.5665456428349995,
+   "avgHoldSec": 42.87591176470589,
+   "medianHoldSec": 11.675,
+   "equityCurve": [
+    {
+     "trade": 1,
+     "equity": -0.22888730279,
+     "pnl": -0.22888730279,
+     "exitTs": 1766803909668
+    },
+    {
+     "trade": 2,
+     "equity": -0.44636744666000006,
+     "pnl": -0.2174801438700001,
+     "exitTs": 1766804086113
+    },
+    {
+     "trade": 3,
+     "equity": -0.3739465127550001,
+     "pnl": 0.07242093390499994,
+     "exitTs": 1766804088957
+    },
+    {
+     "trade": 4,
+     "equity": -0.3284796527200001,
+     "pnl": 0.04546686003500001,
+     "exitTs": 1766804275941
+    },
+    {
+     "trade": 5,
+     "equity": -0.3113625741250001,
+     "pnl": 0.017117078594999995,
+     "exitTs": 1766804354565
+    },
+    {
+     "trade": 6,
+     "equity": -0.5000499978150001,
+     "pnl": -0.18868742369000008,
+     "exitTs": 1766804377052
+    },
+    {
+     "trade": 7,
+     "equity": -0.5896082527550002,
+     "pnl": -0.08955825494000008,
+     "exitTs": 1766804427535
+    },
+    {
+     "trade": 8,
+     "equity": -0.7968703543300002,
+     "pnl": -0.207262101575,
+     "exitTs": 1766804491877
+    },
+    {
+     "trade": 9,
+     "equity": -0.8766321962250002,
+     "pnl": -0.07976184189499999,
+     "exitTs": 1766804585193
+    },
+    {
+     "trade": 10,
+     "equity": -1.0461543714900003,
+     "pnl": -0.1695221752650001,
+     "exitTs": 1766804983889
+    },
+    {
+     "trade": 11,
+     "equity": -1.2589988147850004,
+     "pnl": -0.21284444329500002,
+     "exitTs": 1766805188550
+    },
+    {
+     "trade": 12,
+     "equity": -1.4094292797550005,
+     "pnl": -0.15043046497000007,
+     "exitTs": 1766805423134
+    },
+    {
+     "trade": 13,
+     "equity": -1.2170328823650005,
+     "pnl": 0.19239639738999995,
+     "exitTs": 1766805440303
+    },
+    {
+     "trade": 14,
+     "equity": -0.6994467174150005,
+     "pnl": 0.51758616495,
+     "exitTs": 1766805461228
+    },
+    {
+     "trade": 15,
+     "equity": -0.9605439811850005,
+     "pnl": -0.26109726377000003,
+     "exitTs": 1766805718203
+    },
+    {
+     "trade": 16,
+     "equity": -0.9169294619150005,
+     "pnl": 0.04361451927,
+     "exitTs": 1766805825106
+    },
+    {
+     "trade": 17,
+     "equity": -1.1510155631850005,
+     "pnl": -0.23408610127,
+     "exitTs": 1766806390134
+    },
+    {
+     "trade": 18,
+     "equity": -1.2695919437350005,
+     "pnl": -0.11857638055000005,
+     "exitTs": 1766806417404
+    },
+    {
+     "trade": 19,
+     "equity": -1.4337292550050005,
+     "pnl": -0.16413731127,
+     "exitTs": 1766806448970
+    },
+    {
+     "trade": 20,
+     "equity": -1.2602642010450005,
+     "pnl": 0.17346505395999992,
+     "exitTs": 1766806858428
+    },
+    {
+     "trade": 21,
+     "equity": -1.4795968619950006,
+     "pnl": -0.21933266095000004,
+     "exitTs": 1766806885605
+    },
+    {
+     "trade": 22,
+     "equity": -1.5617379812400007,
+     "pnl": -0.08214111924500006,
+     "exitTs": 1766807328524
+    },
+    {
+     "trade": 23,
+     "equity": -1.815291513175001,
+     "pnl": -0.2535535319350001,
+     "exitTs": 1766807802778
+    },
+    {
+     "trade": 24,
+     "equity": -2.030984896595001,
+     "pnl": -0.21569338342000005,
+     "exitTs": 1766808162615
+    },
+    {
+     "trade": 25,
+     "equity": -2.043813031520001,
+     "pnl": -0.012828134925000005,
+     "exitTs": 1766809414125
+    },
+    {
+     "trade": 26,
+     "equity": -2.175690809715001,
+     "pnl": -0.13187777819500002,
+     "exitTs": 1766809706202
+    },
+    {
+     "trade": 27,
+     "equity": -2.389962268805001,
+     "pnl": -0.2142714590900001,
+     "exitTs": 1766810043728
+    },
+    {
+     "trade": 28,
+     "equity": -2.3950524643700013,
+     "pnl": -0.005090195565000025,
+     "exitTs": 1766810170894
+    },
+    {
+     "trade": 29,
+     "equity": -2.3965188666050015,
+     "pnl": -0.0014664022350000805,
+     "exitTs": 1766810170898
+    },
+    {
+     "trade": 30,
+     "equity": -2.6289700461600014,
+     "pnl": -0.23245117955500003,
+     "exitTs": 1766810187257
+    },
+    {
+     "trade": 31,
+     "equity": -2.6059142026100015,
+     "pnl": 0.023055843549999976,
+     "exitTs": 1766810250348
+    },
+    {
+     "trade": 32,
+     "equity": -2.3149248350100016,
+     "pnl": 0.29098936760000005,
+     "exitTs": 1766810489985
+    },
+    {
+     "trade": 33,
+     "equity": -2.5682052697850017,
+     "pnl": -0.253280434775,
+     "exitTs": 1766810583611
+    },
+    {
+     "trade": 34,
+     "equity": -2.746086246655002,
+     "pnl": -0.17788097687,
+     "exitTs": 1766810630608
+    },
+    {
+     "trade": 35,
+     "equity": -2.9973860946500017,
+     "pnl": -0.251299847995,
+     "exitTs": 1766810851252
+    },
+    {
+     "trade": 36,
+     "equity": -3.156295618890002,
+     "pnl": -0.1589095242400001,
+     "exitTs": 1766811194903
+    },
+    {
+     "trade": 37,
+     "equity": -3.374294136740002,
+     "pnl": -0.2179985178500001,
+     "exitTs": 1766811299306
+    },
+    {
+     "trade": 38,
+     "equity": -3.066333476225002,
+     "pnl": 0.30796066051500004,
+     "exitTs": 1766811397557
+    },
+    {
+     "trade": 39,
+     "equity": -3.058761966635002,
+     "pnl": 0.00757150958999998,
+     "exitTs": 1766811835092
+    },
+    {
+     "trade": 40,
+     "equity": -3.062040307890002,
+     "pnl": -0.00327834125500006,
+     "exitTs": 1766811965513
+    },
+    {
+     "trade": 41,
+     "equity": -3.3943122178000023,
+     "pnl": -0.33227190991000005,
+     "exitTs": 1766811993323
+    },
+    {
+     "trade": 42,
+     "equity": -3.6021528354850023,
+     "pnl": -0.207840617685,
+     "exitTs": 1766812013137
+    },
+    {
+     "trade": 43,
+     "equity": -3.797089883235002,
+     "pnl": -0.19493704775,
+     "exitTs": 1766812094567
+    },
+    {
+     "trade": 44,
+     "equity": -3.189959014220002,
+     "pnl": 0.607130869015,
+     "exitTs": 1766812203803
+    },
+    {
+     "trade": 45,
+     "equity": -3.386447836880002,
+     "pnl": -0.19648882266000006,
+     "exitTs": 1766812257935
+    },
+    {
+     "trade": 46,
+     "equity": -3.377720822805002,
+     "pnl": 0.00872701407499999,
+     "exitTs": 1766812384802
+    },
+    {
+     "trade": 47,
+     "equity": -3.532037769770002,
+     "pnl": -0.15431694696500006,
+     "exitTs": 1766812386424
+    },
+    {
+     "trade": 48,
+     "equity": -3.545902849655002,
+     "pnl": -0.013865079885000003,
+     "exitTs": 1766812494972
+    },
+    {
+     "trade": 49,
+     "equity": -3.735253400955002,
+     "pnl": -0.18935055130000006,
+     "exitTs": 1766812734937
+    },
+    {
+     "trade": 50,
+     "equity": -3.9278724038800017,
+     "pnl": -0.19261900292500006,
+     "exitTs": 1766812831188
+    },
+    {
+     "trade": 51,
+     "equity": -3.8926630915350016,
+     "pnl": 0.03520931234500001,
+     "exitTs": 1770104780437
+    },
+    {
+     "trade": 52,
+     "equity": -3.9364627065550017,
+     "pnl": -0.04379961502000007,
+     "exitTs": 1770104864863
+    },
+    {
+     "trade": 53,
+     "equity": -4.1702377024700015,
+     "pnl": -0.23377499591500003,
+     "exitTs": 1770104991819
+    },
+    {
+     "trade": 54,
+     "equity": -4.093418322970002,
+     "pnl": 0.07681937949999991,
+     "exitTs": 1770105186650
+    },
+    {
+     "trade": 55,
+     "equity": -4.282077724395002,
+     "pnl": -0.1886594014250001,
+     "exitTs": 1770105208032
+    },
+    {
+     "trade": 56,
+     "equity": -4.227698454340002,
+     "pnl": 0.05437927005499999,
+     "exitTs": 1770105422091
+    },
+    {
+     "trade": 57,
+     "equity": -4.530283943720002,
+     "pnl": -0.30258548938,
+     "exitTs": 1770105460367
+    },
+    {
+     "trade": 58,
+     "equity": -4.772139282725003,
+     "pnl": -0.24185533900500006,
+     "exitTs": 1770105748531
+    },
+    {
+     "trade": 59,
+     "equity": -4.546469287865003,
+     "pnl": 0.22566999486,
+     "exitTs": 1770105898823
+    },
+    {
+     "trade": 60,
+     "equity": -4.623027117820003,
+     "pnl": -0.07655782995500005,
+     "exitTs": 1770106245927
+    },
+    {
+     "trade": 61,
+     "equity": -4.8259562654650034,
+     "pnl": -0.20292914764500009,
+     "exitTs": 1770106253252
+    },
+    {
+     "trade": 62,
+     "equity": -4.849694786380003,
+     "pnl": -0.02373852091500009,
+     "exitTs": 1770106445867
+    },
+    {
+     "trade": 63,
+     "equity": -5.080909355565003,
+     "pnl": -0.23121456918500008,
+     "exitTs": 1770106628587
+    },
+    {
+     "trade": 64,
+     "equity": -5.213758654035003,
+     "pnl": -0.13284929847000002,
+     "exitTs": 1770106755857
+    },
+    {
+     "trade": 65,
+     "equity": -5.265591224780003,
+     "pnl": -0.05183257074500003,
+     "exitTs": 1770106896221
+    },
+    {
+     "trade": 66,
+     "equity": -5.489133806265003,
+     "pnl": -0.22354258148500006,
+     "exitTs": 1770107338837
+    },
+    {
+     "trade": 67,
+     "equity": -5.709399589235003,
+     "pnl": -0.22026578297,
+     "exitTs": 1770107541381
+    },
+    {
+     "trade": 68,
+     "equity": -5.930169453835004,
+     "pnl": -0.22076986460000003,
+     "exitTs": 1770107721702
+    }
+   ]
+  },
+  "trades": [
+   {
+    "mint": "BrAZcWM8Z3t1pRGguAEFoMFknSmtDRZeRtx9N4Fvpump",
+    "entryMcSol": 7.131937085,
+    "exitMcSol": 1.301325764,
+    "buySol": 0.8,
+    "sellSol": 0.591992586,
+    "fees": 0.020879888790000002,
+    "pnl": -0.22888730279,
+    "returnPct": -28.610912848749997,
+    "holdSec": 4.32,
+    "entryTs": 1766803905348,
+    "exitTs": 1766803909668,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "AbNwnoZ9EtozwSVBNfNAYGmmkDnEe85sjBHaUQNwpump",
+    "entryMcSol": 14.952633551,
+    "exitMcSol": 8.396269958,
+    "buySol": 0.8,
+    "sellSol": 0.603573458,
+    "fees": 0.021053601869999997,
+    "pnl": -0.2174801438700001,
+    "returnPct": -27.185017983750008,
+    "holdSec": 4.002,
+    "entryTs": 1766804082111,
+    "exitTs": 1766804086113,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "8z5g5i8asdnxmhgMJ1D6Bcf8ig7ruyDAd2JoBJhJpump",
+    "entryMcSol": 8.71030839,
+    "exitMcSol": 10.137867626,
+    "buySol": 0.8,
+    "sellSol": 0.897889273,
+    "fees": 0.025468339094999997,
+    "pnl": 0.07242093390499994,
+    "returnPct": 9.052616738124993,
+    "holdSec": 28.822,
+    "entryTs": 1766804060135,
+    "exitTs": 1766804088957,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "CJKnRKq1u137dVeWoVXonNo4N1Z5ow22fbbfNRgvpimp",
+    "entryMcSol": 9.183486248,
+    "exitMcSol": 10.02180932,
+    "buySol": 0.8,
+    "sellSol": 0.870524731,
+    "fees": 0.025057870965,
+    "pnl": 0.04546686003500001,
+    "returnPct": 5.683357504375,
+    "holdSec": 11.21,
+    "entryTs": 1766804264731,
+    "exitTs": 1766804275941,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "3kGR1CfJuDBGBf5s3YdLohwSVHvaXSnXF4EaYGstpump",
+    "entryMcSol": 11.319048937,
+    "exitMcSol": 11.552266043,
+    "buySol": 0.8,
+    "sellSol": 0.841743227,
+    "fees": 0.024626148405,
+    "pnl": 0.017117078594999995,
+    "returnPct": 2.139634824374999,
+    "holdSec": 67.722,
+    "entryTs": 1766804286843,
+    "exitTs": 1766804354565,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "CLX6G8mHRbFZqxfuNX2Kk6q6CzXbD5A6hcf6pMQhTuKe",
+    "entryMcSol": 8.49854876,
+    "exitMcSol": 3.567487926,
+    "buySol": 0.8,
+    "sellSol": 0.632804646,
+    "fees": 0.02149206969,
+    "pnl": -0.18868742369000008,
+    "returnPct": -23.585927961250007,
+    "holdSec": 2.651,
+    "entryTs": 1766804374401,
+    "exitTs": 1766804377052,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "4eEvouYMnf9mbU3ix6s6BdLtC4XTDn15fU76XrQfpump",
+    "entryMcSol": 5.513001693,
+    "exitMcSol": 3.253759186,
+    "buySol": 0.8,
+    "sellSol": 0.733443396,
+    "fees": 0.02300165094,
+    "pnl": -0.08955825494000008,
+    "returnPct": -11.19478186750001,
+    "holdSec": 12.895,
+    "entryTs": 1766804414640,
+    "exitTs": 1766804427535,
+    "exitReason": "Holder concentration risk"
+   },
+   {
+    "mint": "EQC2PLBPuZofCmTvEks47Bt3pTDs7VdEK4k6BZMcpump",
+    "entryMcSol": 10.050756502,
+    "exitMcSol": 4.427988049,
+    "buySol": 0.8,
+    "sellSol": 0.613947105,
+    "fees": 0.021209206575,
+    "pnl": -0.207262101575,
+    "returnPct": -25.907762696874997,
+    "holdSec": 8.267,
+    "entryTs": 1766804483610,
+    "exitTs": 1766804491877,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "8Ukiywr4dVqk6SXaiPnbEEDsaeW2vpAutm3XcZv5pump",
+    "entryMcSol": 4.496723096,
+    "exitMcSol": 2.496329649,
+    "buySol": 0.8,
+    "sellSol": 0.743388993,
+    "fees": 0.023150834895000003,
+    "pnl": -0.07976184189499999,
+    "returnPct": -9.970230236874999,
+    "holdSec": 7.839,
+    "entryTs": 1766804577354,
+    "exitTs": 1766804585193,
+    "exitReason": "Holder concentration risk"
+   },
+   {
+    "mint": "GDZiUGEu7YP2RiyDcWRt5XPdG18pGNgw8znUekPDpump",
+    "entryMcSol": 8.943654601,
+    "exitMcSol": 4.476697075,
+    "buySol": 0.8,
+    "sellSol": 0.652261751,
+    "fees": 0.021783926265,
+    "pnl": -0.1695221752650001,
+    "returnPct": -21.19027190812501,
+    "holdSec": 13.88,
+    "entryTs": 1766804970009,
+    "exitTs": 1766804983889,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "GmmxJTjbJP7nGai1aaTun1jQYtNWfqTaVbzjrLnHpump",
+    "entryMcSol": 14.683620262,
+    "exitMcSol": 8.309928301,
+    "buySol": 0.8,
+    "sellSol": 0.608279753,
+    "fees": 0.021124196294999998,
+    "pnl": -0.21284444329500002,
+    "returnPct": -26.605555411875,
+    "holdSec": 50.417,
+    "entryTs": 1766805138133,
+    "exitTs": 1766805188550,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "94oCze1UULaXepQbga7wpQrpGUV9jGdfVUG76h6Jpump",
+    "entryMcSol": 9.052879412,
+    "exitMcSol": 5.080443112,
+    "buySol": 0.8,
+    "sellSol": 0.671644198,
+    "fees": 0.02207466297,
+    "pnl": -0.15043046497000007,
+    "returnPct": -18.803808121250007,
+    "holdSec": 246.42,
+    "entryTs": 1766805176714,
+    "exitTs": 1766805423134,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "ArXh3aXeoocZCm2qbWMA6y8twhGSHQh6WAwBTAS8pump",
+    "entryMcSol": 10.764779905,
+    "exitMcSol": 15.062135264,
+    "buySol": 0.8,
+    "sellSol": 1.019691774,
+    "fees": 0.027295376609999998,
+    "pnl": 0.19239639738999995,
+    "returnPct": 24.049549673749993,
+    "holdSec": 11.545,
+    "entryTs": 1766805428758,
+    "exitTs": 1766805440303,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "GvEjpHiVS1kbb1wPQtsQkn6SQ51AD1ApGQZggxaZpimp",
+    "entryMcSol": 5.826537097,
+    "exitMcSol": 15.344685704,
+    "buySol": 0.8,
+    "sellSol": 1.34983367,
+    "fees": 0.03224750505,
+    "pnl": 0.51758616495,
+    "returnPct": 64.69827061875,
+    "holdSec": 14.892,
+    "entryTs": 1766805446336,
+    "exitTs": 1766805461228,
+    "exitReason": "Take profit"
+   },
+   {
+    "mint": "CKaX6Lc5ZShZXJs8JGsDEQi2TERK4pg8XTYH9A1TiRaH",
+    "entryMcSol": 22.713284645,
+    "exitMcSol": 13.460731331,
+    "buySol": 0.8,
+    "sellSol": 0.559292118,
+    "fees": 0.02038938177,
+    "pnl": -0.26109726377000003,
+    "returnPct": -32.637157971250005,
+    "holdSec": 0.52,
+    "entryTs": 1766805717683,
+    "exitTs": 1766805718203,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "F6UBxHthWR9dDVxekvh8bRn4kqRDcztWwPHjPihGpump",
+    "entryMcSol": 10.259326563,
+    "exitMcSol": 11.10006418,
+    "buySol": 0.8,
+    "sellSol": 0.868644182,
+    "fees": 0.02502966273,
+    "pnl": 0.04361451927,
+    "returnPct": 5.451814908749999,
+    "holdSec": 54.395,
+    "entryTs": 1766805770711,
+    "exitTs": 1766805825106,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "FscmpTqHH5GNjoJDEjyAB6jENjuEt72PJ4tEfYEqpump",
+    "entryMcSol": 14.715592608,
+    "exitMcSol": 7.65738768,
+    "buySol": 0.8,
+    "sellSol": 0.586714618,
+    "fees": 0.02080071927,
+    "pnl": -0.23408610127,
+    "returnPct": -29.26076265875,
+    "holdSec": 17.316,
+    "entryTs": 1766806372818,
+    "exitTs": 1766806390134,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "EjaRfB2zUueM1upZ96hobtT3pFFBV1CK7HhJ2L7Upump",
+    "entryMcSol": 5.310082147,
+    "exitMcSol": 2.395923401,
+    "buySol": 0.8,
+    "sellSol": 0.70398337,
+    "fees": 0.02255975055,
+    "pnl": -0.11857638055000005,
+    "returnPct": -14.822047568750005,
+    "holdSec": 8.639,
+    "entryTs": 1766806408765,
+    "exitTs": 1766806417404,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "cyozDPC9AUqv1h6zfEx5WPeqhtWZmKYg3nMDAwvpump",
+    "entryMcSol": 7.517851981,
+    "exitMcSol": 3.326688341,
+    "buySol": 0.8,
+    "sellSol": 0.657728618,
+    "fees": 0.021865929269999997,
+    "pnl": -0.16413731127,
+    "returnPct": -20.51716390875,
+    "holdSec": 3.168,
+    "entryTs": 1766806445802,
+    "exitTs": 1766806448970,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "26Pumi7TUc8axQSgXJhagkNFAcKbDypCDkSTnTVEpump",
+    "entryMcSol": 9.403018281,
+    "exitMcSol": 13.117331786,
+    "buySol": 0.8,
+    "sellSol": 1.000472136,
+    "fees": 0.027007082039999998,
+    "pnl": 0.17346505395999992,
+    "returnPct": 21.68313174499999,
+    "holdSec": 18.864,
+    "entryTs": 1766806839564,
+    "exitTs": 1766806858428,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "7cjeLRTKBkoJ5HANJjpCGKGEtqbaunsLSsRoL4eFpump",
+    "entryMcSol": 11.015229015,
+    "exitMcSol": 4.922131844,
+    "buySol": 0.8,
+    "sellSol": 0.60169273,
+    "fees": 0.02102539095,
+    "pnl": -0.21933266095000004,
+    "returnPct": -27.416582618750002,
+    "holdSec": 15.916,
+    "entryTs": 1766806869689,
+    "exitTs": 1766806885605,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "H1vXAFAgBAKEPFemCuoAAVCkaV5o6wZRu2cdaipKpump",
+    "entryMcSol": 14.650113292,
+    "exitMcSol": 12.215765031,
+    "buySol": 0.8,
+    "sellSol": 0.740973483,
+    "fees": 0.023114602245,
+    "pnl": -0.08214111924500006,
+    "returnPct": -10.267639905625007,
+    "holdSec": 289.208,
+    "entryTs": 1766807039316,
+    "exitTs": 1766807328524,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "5ESbwKEzxQHGux1Vo1ChKbYjLjZKF5sxsQDxQjcFpump",
+    "entryMcSol": 15.508351571,
+    "exitMcSol": 7.689939003,
+    "buySol": 0.8,
+    "sellSol": 0.566950729,
+    "fees": 0.020504260935,
+    "pnl": -0.2535535319350001,
+    "returnPct": -31.694191491875007,
+    "holdSec": 2.936,
+    "entryTs": 1766807799842,
+    "exitTs": 1766807802778,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "4tzbvbcJdTBdfaTR42iqH6Khwj4pGCLC3PbyUUxSpump",
+    "entryMcSol": 16.171471711,
+    "exitMcSol": 9.51375736,
+    "buySol": 0.8,
+    "sellSol": 0.605387428,
+    "fees": 0.02108081142,
+    "pnl": -0.21569338342000005,
+    "returnPct": -26.961672927500004,
+    "holdSec": 37.575,
+    "entryTs": 1766808125040,
+    "exitTs": 1766808162615,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "BhsaAboaKBxgos7r8LpoyDMMcx2CLBHxwwLTZAuqpump",
+    "entryMcSol": 8.812394797,
+    "exitMcSol": 8.27809095,
+    "buySol": 0.8,
+    "sellSol": 0.811341995,
+    "fees": 0.024170129925,
+    "pnl": -0.012828134925000005,
+    "returnPct": -1.6035168656250005,
+    "holdSec": 123.701,
+    "entryTs": 1766809290424,
+    "exitTs": 1766809414125,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "FmPZRx33zLGnE5jwuWpGeFPLc5b5ooRVMuTE8dbSpump",
+    "entryMcSol": 7.599557822,
+    "exitMcSol": 4.214042562,
+    "buySol": 0.8,
+    "sellSol": 0.690479413,
+    "fees": 0.022357191195,
+    "pnl": -0.13187777819500002,
+    "returnPct": -16.484722274375002,
+    "holdSec": 14.562,
+    "entryTs": 1766809691640,
+    "exitTs": 1766809706202,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "FDsZTz2uXhtiYvSHZMP1fNrn9Uw2K57kfHBPB8qgpump",
+    "entryMcSol": 11.130809014,
+    "exitMcSol": 5.170315412,
+    "buySol": 0.8,
+    "sellSol": 0.606831006,
+    "fees": 0.021102465089999998,
+    "pnl": -0.2142714590900001,
+    "returnPct": -26.783932386250008,
+    "holdSec": 31.801,
+    "entryTs": 1766810011927,
+    "exitTs": 1766810043728,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "5KRq8Zp4txANVgqz7h8cXkc6vciDb6BEiWu1LT2dpump",
+    "entryMcSol": 9.836258754,
+    "exitMcSol": 9.497084095,
+    "buySol": 0.8,
+    "sellSol": 0.819197771,
+    "fees": 0.024287966565,
+    "pnl": -0.005090195565000025,
+    "returnPct": -0.6362744456250031,
+    "holdSec": 262.739,
+    "entryTs": 1766809908155,
+    "exitTs": 1766810170894,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "3GfeFHRYx5ZrDWWyN2kxDHtDKGGKPNKRR526hLydpump",
+    "entryMcSol": 11.978046563,
+    "exitMcSol": 11.75695534,
+    "buySol": 0.8,
+    "sellSol": 0.822876749,
+    "fees": 0.024343151235,
+    "pnl": -0.0014664022350000805,
+    "returnPct": -0.18330027937501006,
+    "holdSec": 72.502,
+    "entryTs": 1766810098396,
+    "exitTs": 1766810170898,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "9TWZnLpH3o7Kva6GXXKbaeSNrLM3C4jFR3Yeckuhpump",
+    "entryMcSol": 19.972752831,
+    "exitMcSol": 12.218758767,
+    "buySol": 0.8,
+    "sellSol": 0.588374437,
+    "fees": 0.020825616555,
+    "pnl": -0.23245117955500003,
+    "returnPct": -29.056397444375005,
+    "holdSec": 31.994,
+    "entryTs": 1766810155263,
+    "exitTs": 1766810187257,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "Axc7XSBCRPvYvJfzcVHq3guJ4HoqwUD5em9EDxKKpump",
+    "entryMcSol": 14.548860194,
+    "exitMcSol": 15.024159316,
+    "buySol": 0.8,
+    "sellSol": 0.84777243,
+    "fees": 0.02471658645,
+    "pnl": 0.023055843549999976,
+    "returnPct": 2.8819804437499967,
+    "holdSec": 4.375,
+    "entryTs": 1766810245973,
+    "exitTs": 1766810250348,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "BFBMD6bHrmhaBqJNNRxGqKpp6w1DYLK7tQKijgrSpimp",
+    "entryMcSol": 24.873463439,
+    "exitMcSol": 33.888519295,
+    "buySol": 0.8,
+    "sellSol": 1.11978616,
+    "fees": 0.0287967924,
+    "pnl": 0.29098936760000005,
+    "returnPct": 36.373670950000005,
+    "holdSec": 98.287,
+    "entryTs": 1766810391698,
+    "exitTs": 1766810489985,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "6J37fzbhYQENhARoy6vjcB3GWhBxkDznqQ2zaFPrpump",
+    "entryMcSol": 13.87449873,
+    "exitMcSol": 6.3232955,
+    "buySol": 0.8,
+    "sellSol": 0.567227985,
+    "fees": 0.020508419774999998,
+    "pnl": -0.253280434775,
+    "returnPct": -31.660054346875,
+    "holdSec": 11.675,
+    "entryTs": 1766810571936,
+    "exitTs": 1766810583611,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "2QMgq6mPSwSDkQm7cyaVtH4tRxeJw2dwVW2xmXH24mtF",
+    "entryMcSol": 11.239459041,
+    "exitMcSol": 6.313280825,
+    "buySol": 0.8,
+    "sellSol": 0.643775658,
+    "fees": 0.02165663487,
+    "pnl": -0.17788097687,
+    "returnPct": -22.235122108749998,
+    "holdSec": 8.711,
+    "entryTs": 1766810621897,
+    "exitTs": 1766810630608,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "2ahxSdaLsAF62ft6Fg39AYog59gUoemszjcHauVZpump",
+    "entryMcSol": 19.659327579,
+    "exitMcSol": 11.26686831,
+    "buySol": 0.8,
+    "sellSol": 0.569238733,
+    "fees": 0.020538580995,
+    "pnl": -0.251299847995,
+    "returnPct": -31.412480999375,
+    "holdSec": 1.428,
+    "entryTs": 1766810849824,
+    "exitTs": 1766810851252,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "AxiQqyBkPXLsn9a92P25bsWdeHT7jjay2BhiXBCWpump",
+    "entryMcSol": 10.200185175,
+    "exitMcSol": 5.901532894,
+    "buySol": 0.8,
+    "sellSol": 0.663036016,
+    "fees": 0.02194554024,
+    "pnl": -0.1589095242400001,
+    "returnPct": -19.86369053000001,
+    "holdSec": 3.816,
+    "entryTs": 1766811191087,
+    "exitTs": 1766811194903,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "EQ7ppr1McKE9FGKbCTAYqvJRHRHuWp9T3Kv6tFfdpump",
+    "entryMcSol": 15.886691037,
+    "exitMcSol": 9.190634445,
+    "buySol": 0.8,
+    "sellSol": 0.60304719,
+    "fees": 0.02104570785,
+    "pnl": -0.2179985178500001,
+    "returnPct": -27.249814731250012,
+    "holdSec": 9.801,
+    "entryTs": 1766811289505,
+    "exitTs": 1766811299306,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "BzxsCuauxanFbyoQ42JSafC31QtAdfAdhqDB2S28pump",
+    "entryMcSol": 8.562299215,
+    "exitMcSol": 14.928502156,
+    "buySol": 0.8,
+    "sellSol": 1.137015899,
+    "fees": 0.029055238485000003,
+    "pnl": 0.30796066051500004,
+    "returnPct": 38.495082564375004,
+    "holdSec": 24.847,
+    "entryTs": 1766811372710,
+    "exitTs": 1766811397557,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "HnqPxChu2L3ap3bSqYjynaCAoDsgZeNoj2vd3oovpump",
+    "entryMcSol": 10.318949474,
+    "exitMcSol": 10.294835585,
+    "buySol": 0.8,
+    "sellSol": 0.832052294,
+    "fees": 0.02448078441,
+    "pnl": 0.00757150958999998,
+    "returnPct": 0.9464386987499974,
+    "holdSec": 30.756,
+    "entryTs": 1766811804336,
+    "exitTs": 1766811835092,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "TDWFy6rGq49Zp2YkeNQt4Z4WKLtQHtwmZLfaM2Spump",
+    "entryMcSol": 6.586994995,
+    "exitMcSol": 6.249243842,
+    "buySol": 0.8,
+    "sellSol": 0.821037217,
+    "fees": 0.024315558255,
+    "pnl": -0.00327834125500006,
+    "returnPct": -0.4097926568750075,
+    "holdSec": 9.213,
+    "entryTs": 1766811956300,
+    "exitTs": 1766811965513,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "Bi15VfjcB7SVtMbK9E4qr4xQh3usNTKsVyfX1Zv5ttff",
+    "entryMcSol": 25.537133436,
+    "exitMcSol": 12.776856889,
+    "buySol": 0.8,
+    "sellSol": 0.487033594,
+    "fees": 0.019305503909999997,
+    "pnl": -0.33227190991000005,
+    "returnPct": -41.533988738750004,
+    "holdSec": 2.078,
+    "entryTs": 1766811991245,
+    "exitTs": 1766811993323,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "ATPuYYvn3gnBRjfn7tMSdRngS9bB9UPT5qidSq36pump",
+    "entryMcSol": 14.364352123,
+    "exitMcSol": 8.188746763,
+    "buySol": 0.8,
+    "sellSol": 0.613359779,
+    "fees": 0.021200396685,
+    "pnl": -0.207840617685,
+    "returnPct": -25.980077210624998,
+    "holdSec": 36.744,
+    "entryTs": 1766811976393,
+    "exitTs": 1766812013137,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "7xMb3ruhgog7a4ZKFbddFh5eNqfufmvz5jdL5vbspump",
+    "entryMcSol": 11.761157406,
+    "exitMcSol": 6.287513378,
+    "buySol": 0.8,
+    "sellSol": 0.62645985,
+    "fees": 0.02139689775,
+    "pnl": -0.19493704775,
+    "returnPct": -24.36713096875,
+    "holdSec": 129.502,
+    "entryTs": 1766811965065,
+    "exitTs": 1766812094567,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "D5qsHAjSFg1s9sRvduUTxBtcJCPr8zFcy6PVQskVpump",
+    "entryMcSol": 6.915542126,
+    "exitMcSol": 18.285344668,
+    "buySol": 0.8,
+    "sellSol": 1.440741999,
+    "fees": 0.033611129984999995,
+    "pnl": 0.607130869015,
+    "returnPct": 75.89135862687499,
+    "holdSec": 114.132,
+    "entryTs": 1766812089671,
+    "exitTs": 1766812203803,
+    "exitReason": "Take profit"
+   },
+   {
+    "mint": "6qnh4WeAkqLpQr1tnbaKaG5XeUZRTfFa8KXZvgc6pump",
+    "entryMcSol": 10.805002188,
+    "exitMcSol": 5.397186878,
+    "buySol": 0.8,
+    "sellSol": 0.624884444,
+    "fees": 0.021373266659999998,
+    "pnl": -0.19648882266000006,
+    "returnPct": -24.561102832500005,
+    "holdSec": 1.893,
+    "entryTs": 1766812256042,
+    "exitTs": 1766812257935,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "FAyZhdeAvpeRWBkRtnrzvoojVFdhoUaeTCGDNaAMpump",
+    "entryMcSol": 20.274568218,
+    "exitMcSol": 20.483176615,
+    "buySol": 0.8,
+    "sellSol": 0.833225395,
+    "fees": 0.024498380925,
+    "pnl": 0.00872701407499999,
+    "returnPct": 1.0908767593749988,
+    "holdSec": 30.963,
+    "entryTs": 1766812353839,
+    "exitTs": 1766812384802,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "Fe4XWermD2G3FMetzQpgi1WVD2g9wgzAFnzcZBrdpump",
+    "entryMcSol": 4.932930464,
+    "exitMcSol": 1.214296065,
+    "buySol": 0.8,
+    "sellSol": 0.667698531,
+    "fees": 0.022015477965,
+    "pnl": -0.15431694696500006,
+    "returnPct": -19.289618370625007,
+    "holdSec": 2.305,
+    "entryTs": 1766812384119,
+    "exitTs": 1766812386424,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "Ff5Z1EzPycgcBwTiS7CSuVNZgopJvrDxcD5uDP5Upump",
+    "entryMcSol": 11.006475558,
+    "exitMcSol": 10.461653736,
+    "buySol": 0.8,
+    "sellSol": 0.810289259,
+    "fees": 0.024154338884999998,
+    "pnl": -0.013865079885000003,
+    "returnPct": -1.733134985625,
+    "holdSec": 55.2,
+    "entryTs": 1766812439772,
+    "exitTs": 1766812494972,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "FJE486j7HjW6LdbPpfdRRoH2uDpoU25Tb6j8P61Gpump",
+    "entryMcSol": 9.157784548,
+    "exitMcSol": 4.13580321,
+    "buySol": 0.8,
+    "sellSol": 0.63213142,
+    "fees": 0.021481971300000003,
+    "pnl": -0.18935055130000006,
+    "returnPct": -23.668818912500004,
+    "holdSec": 15.356,
+    "entryTs": 1766812719581,
+    "exitTs": 1766812734937,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "G2EMA1X9jTiqM54vaTo3qEKCXuErihrKB3gLVpSupump",
+    "entryMcSol": 11.940103381,
+    "exitMcSol": 6.513674811,
+    "buySol": 0.8,
+    "sellSol": 0.628813195,
+    "fees": 0.021432197925,
+    "pnl": -0.19261900292500006,
+    "returnPct": -24.077375365625006,
+    "holdSec": 3.117,
+    "entryTs": 1766812828071,
+    "exitTs": 1766812831188,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "6Ygu5mpvbLg3WS9oifTKGE5yRNsyy5Ard6i46Rwbpump",
+    "entryMcSol": 9.414604373,
+    "exitMcSol": 10.023916963,
+    "buySol": 0.8,
+    "sellSol": 0.860110977,
+    "fees": 0.024901664655,
+    "pnl": 0.03520931234500001,
+    "returnPct": 4.401164043125001,
+    "holdSec": 4.149,
+    "entryTs": 1770104776288,
+    "exitTs": 1770104780437,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "5g9WJUoMUdhC3rTYCjiqyDVas9nctbeqZX9uwAyTpump",
+    "entryMcSol": 13.486531376,
+    "exitMcSol": 12.151787201,
+    "buySol": 0.8,
+    "sellSol": 0.779898868,
+    "fees": 0.023698483019999998,
+    "pnl": -0.04379961502000007,
+    "returnPct": -5.474951877500009,
+    "holdSec": 48.125,
+    "entryTs": 1770104816738,
+    "exitTs": 1770104864863,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "A3KEuSTx7zpeAY4bjyo6BnAG7suM6siYqsNRoLgwpump",
+    "entryMcSol": 18.144247747,
+    "exitMcSol": 10.604508504,
+    "buySol": 0.8,
+    "sellSol": 0.587030461,
+    "fees": 0.020805456915000003,
+    "pnl": -0.23377499591500003,
+    "returnPct": -29.221874489375004,
+    "holdSec": 4.685,
+    "entryTs": 1770104987134,
+    "exitTs": 1770104991819,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "D9mWu6MmoF7mzynNRZjAPgf7VH4chLd1sMwTsy8rpump",
+    "entryMcSol": 9.516926341,
+    "exitMcSol": 11.093106449,
+    "buySol": 0.8,
+    "sellSol": 0.9023547,
+    "fees": 0.025535320499999997,
+    "pnl": 0.07681937949999991,
+    "returnPct": 9.602422437499989,
+    "holdSec": 4.139,
+    "entryTs": 1770105182511,
+    "exitTs": 1770105186650,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "BNzHW1CvMwncpjSVZExk7FS2YAykUv77D5HpGGTbpump",
+    "entryMcSol": 25.877961662,
+    "exitMcSol": 19.025695559,
+    "buySol": 0.8,
+    "sellSol": 0.632833095,
+    "fees": 0.021492496424999997,
+    "pnl": -0.1886594014250001,
+    "returnPct": -23.58242517812501,
+    "holdSec": 3.407,
+    "entryTs": 1770105204625,
+    "exitTs": 1770105208032,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "G9Cz5wwFPuPXkJxDphy877tnYHaHaQEykkr2NSutpump",
+    "entryMcSol": 6.782177954,
+    "exitMcSol": 7.709131334,
+    "buySol": 0.8,
+    "sellSol": 0.879572863,
+    "fees": 0.025193592945000003,
+    "pnl": 0.05437927005499999,
+    "returnPct": 6.797408756874998,
+    "holdSec": 30.284,
+    "entryTs": 1770105391807,
+    "exitTs": 1770105422091,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "2to6AtcPztXKAn6YQyV7kouH53KRWipwHy1oHtpFpump",
+    "entryMcSol": 9.340059256,
+    "exitMcSol": 1.049826977,
+    "buySol": 0.8,
+    "sellSol": 0.517172092,
+    "fees": 0.01975758138,
+    "pnl": -0.30258548938,
+    "returnPct": -37.8231861725,
+    "holdSec": 2.416,
+    "entryTs": 1770105457951,
+    "exitTs": 1770105460367,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "AwxKuUAre9AKuzDsWkPTqCyMo7mdjfuzTV9d7zumpump",
+    "entryMcSol": 15.834256899,
+    "exitMcSol": 8.356911158,
+    "buySol": 0.8,
+    "sellSol": 0.578827067,
+    "fees": 0.020682406005,
+    "pnl": -0.24185533900500006,
+    "returnPct": -30.231917375625006,
+    "holdSec": 10.87,
+    "entryTs": 1770105737661,
+    "exitTs": 1770105748531,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "EhpyCD5VkYqwqQ5cnM99Fc6UzsYp5woRmc1zpdwrpump",
+    "entryMcSol": 13.689291945,
+    "exitMcSol": 19.1499799,
+    "buySol": 0.8,
+    "sellSol": 1.053472076,
+    "fees": 0.02780208114,
+    "pnl": 0.22566999486,
+    "returnPct": 28.208749357499997,
+    "holdSec": 7.977,
+    "entryTs": 1770105890846,
+    "exitTs": 1770105898823,
+    "exitReason": "Trailing stop"
+   },
+   {
+    "mint": "Db8Apdn6d75dbBzrfSaWXXanDXVwwqYBWGW5EhLZpump",
+    "entryMcSol": 10.279129721,
+    "exitMcSol": 8.152807751,
+    "buySol": 0.8,
+    "sellSol": 0.746641797,
+    "fees": 0.023199626954999997,
+    "pnl": -0.07655782995500005,
+    "returnPct": -9.569728744375006,
+    "holdSec": 309.897,
+    "entryTs": 1770105936030,
+    "exitTs": 1770106245927,
+    "exitReason": "Momentum failure"
+   },
+   {
+    "mint": "5WG6waDC2RUWgewfSzxHZXdLiV7sXsMa1ZWF6vTLpump",
+    "entryMcSol": 15.022224326,
+    "exitMcSol": 8.9208039,
+    "buySol": 0.8,
+    "sellSol": 0.618346043,
+    "fees": 0.021275190645,
+    "pnl": -0.20292914764500009,
+    "returnPct": -25.366143455625007,
+    "holdSec": 9.269,
+    "entryTs": 1770106243983,
+    "exitTs": 1770106253252,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "h51oeaVSQ8bCAyFZfYGXyzSwgF7xgA5PpXogEBtpump",
+    "entryMcSol": 8.545414486,
+    "exitMcSol": 7.751610758,
+    "buySol": 0.8,
+    "sellSol": 0.800265461,
+    "fees": 0.024003981915,
+    "pnl": -0.02373852091500009,
+    "returnPct": -2.967315114375011,
+    "holdSec": 350.813,
+    "entryTs": 1770106095054,
+    "exitTs": 1770106445867,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "BQv1ys9u46nr33kRT6gbDs1iBKNhkBAwtQ1qv2Agpump",
+    "entryMcSol": 20.091998023,
+    "exitMcSol": 12.365838919,
+    "buySol": 0.8,
+    "sellSol": 0.589629879,
+    "fees": 0.020844448185,
+    "pnl": -0.23121456918500008,
+    "returnPct": -28.901821148125006,
+    "holdSec": 1.862,
+    "entryTs": 1770106626725,
+    "exitTs": 1770106628587,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "6iez2U2BNUVbKKEYNgVuuemJ3vxeu7qX3LaQCB6Rpump",
+    "entryMcSol": 13.680791473,
+    "exitMcSol": 9.835500275,
+    "buySol": 0.8,
+    "sellSol": 0.689493098,
+    "fees": 0.02234239647,
+    "pnl": -0.13284929847000002,
+    "returnPct": -16.60616230875,
+    "holdSec": 2.21,
+    "entryTs": 1770106753647,
+    "exitTs": 1770106755857,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "F5VVPdcMQzeqPYCjZFZfNwT2Ysy5hXfc2pQ8Cc1Gpump",
+    "entryMcSol": 24.010260395,
+    "exitMcSol": 22.269054589,
+    "buySol": 0.8,
+    "sellSol": 0.771743583,
+    "fees": 0.023576153744999998,
+    "pnl": -0.05183257074500003,
+    "returnPct": -6.479071343125003,
+    "holdSec": 0.397,
+    "entryTs": 1770106895824,
+    "exitTs": 1770106896221,
+    "exitReason": "Break-even protection"
+   },
+   {
+    "mint": "AYyMBtCZnyC3f5BwwGB786JFaSwTguMxAXMseo53pump",
+    "entryMcSol": 18.954176245,
+    "exitMcSol": 11.659531462,
+    "buySol": 0.8,
+    "sellSol": 0.597418699,
+    "fees": 0.020961280485,
+    "pnl": -0.22354258148500006,
+    "returnPct": -27.942822685625007,
+    "holdSec": 7.49,
+    "entryTs": 1770107331347,
+    "exitTs": 1770107338837,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "Ef4bHpSWkKBjv6VnzKBG5Ug1yXiCMjJyGynbAwUbpump",
+    "entryMcSol": 14.050902863,
+    "exitMcSol": 7.525497013,
+    "buySol": 0.8,
+    "sellSol": 0.600745398,
+    "fees": 0.02101118097,
+    "pnl": -0.22026578297,
+    "returnPct": -27.533222871249997,
+    "holdSec": 4.271,
+    "entryTs": 1770107537110,
+    "exitTs": 1770107541381,
+    "exitReason": "Stop loss"
+   },
+   {
+    "mint": "CiVyXMZE5QpKr6HdpzzcVH3kQ5En6B6xwz7jNiykpump",
+    "entryMcSol": 13.504564307,
+    "exitMcSol": 7.036396854,
+    "buySol": 0.8,
+    "sellSol": 0.60023364,
+    "fees": 0.0210035046,
+    "pnl": -0.22076986460000003,
+    "returnPct": -27.596233075000004,
+    "holdSec": 48.384,
+    "entryTs": 1770107673318,
+    "exitTs": 1770107721702,
+    "exitReason": "Stop loss"
+   }
+  ],
+  "exitReasons": [
+   {
+    "reason": "Stop loss",
+    "count": 38,
+    "pnl": -8.012982477995003,
+    "avgPnl": -0.21086795994723692
+   },
+   {
+    "reason": "Break-even protection",
+    "count": 10,
+    "pnl": -0.2825972302150004,
+    "avgPnl": -0.02825972302150004
+   },
+   {
+    "reason": "Holder concentration risk",
+    "count": 2,
+    "pnl": -0.16932009683500007,
+    "avgPnl": -0.08466004841750004
+   },
+   {
+    "reason": "Momentum failure",
+    "count": 1,
+    "pnl": -0.07655782995500005,
+    "avgPnl": -0.07655782995500005
+   },
+   {
+    "reason": "Take profit",
+    "count": 2,
+    "pnl": 1.1247170339650001,
+    "avgPnl": 0.5623585169825001
+   },
+   {
+    "reason": "Trailing stop",
+    "count": 15,
+    "pnl": 1.4865711471999998,
+    "avgPnl": 0.09910474314666666
+   }
+  ]
+ },
+ "best": {
+  "params": {
+   "takeProfitPercent": 40,
+   "stopLossPercent": 60,
+   "totalPnl": -2.5857223523550017,
+   "winRate": 44.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 2.5857223523550017,
+   "profitFactor": 0.7212641981045961
+  },
+  "stats": {
+   "trades": 68,
+   "totalPnl": -2.5857223523550017,
+   "winCount": 30,
+   "winRate": 44.11764705882353,
+   "avgPnl": -0.038025328711102965,
+   "medianPnl": -0.07651548382000001,
+   "bestTrade": 0.533708151465,
+   "worstTrade": -0.42129666202500005,
+   "maxDrawdown": 2.5857223523550017,
+   "profitFactor": 0.7212641981045961,
+   "grossProfit": 6.6908841501900005,
+   "grossLoss": 9.276606502544999,
+   "capitalDeployed": 54.399999999999935,
+   "returnOnCapitalPct": -4.753166088887877,
+   "pnlPerTradeSd": 0.25811401377719945,
+   "sharpePerTrade": -0.14731989230126002,
+   "totalFees": 1.6174763093549998,
+   "avgHoldSec": 48.48860294117646,
+   "medianHoldSec": 13.771,
+   "equityCurve": [
+    {
+     "trade": 1,
+     "equity": -0.22888730279,
+     "pnl": -0.22888730279,
+     "exitTs": 1766803909668
+    },
+    {
+     "trade": 2,
+     "equity": -0.08177279153000006,
+     "pnl": 0.14711451125999994,
+     "exitTs": 1766804086449
+    },
+    {
+     "trade": 3,
+     "equity": -0.3863403284450001,
+     "pnl": -0.30456753691500005,
+     "exitTs": 1766804092154
+    },
+    {
+     "trade": 4,
+     "equity": -0.19575310912000024,
+     "pnl": 0.19058721932499986,
+     "exitTs": 1766804271587
+    },
+    {
+     "trade": 5,
+     "equity": -0.029248189270000335,
+     "pnl": 0.1665049198499999,
+     "exitTs": 1766804291843
+    },
+    {
+     "trade": 6,
+     "equity": -0.2691982959650004,
+     "pnl": -0.23995010669500005,
+     "exitTs": 1766804380732
+    },
+    {
+     "trade": 7,
+     "equity": -0.35875655090500047,
+     "pnl": -0.08955825494000008,
+     "exitTs": 1766804427535
+    },
+    {
+     "trade": 8,
+     "equity": -0.6243956989250005,
+     "pnl": -0.26563914802,
+     "exitTs": 1766804493343
+    },
+    {
+     "trade": 9,
+     "equity": -0.7041575408200005,
+     "pnl": -0.07976184189499999,
+     "exitTs": 1766804585193
+    },
+    {
+     "trade": 10,
+     "equity": -0.5683791768750006,
+     "pnl": 0.1357783639449999,
+     "exitTs": 1766804988694
+    },
+    {
+     "trade": 11,
+     "equity": -0.8999875691150007,
+     "pnl": -0.33160839224000005,
+     "exitTs": 1766805190509
+    },
+    {
+     "trade": 12,
+     "equity": -1.0504180340850007,
+     "pnl": -0.15043046497000007,
+     "exitTs": 1766805423134
+    },
+    {
+     "trade": 13,
+     "equity": -0.8928800154400007,
+     "pnl": 0.15753801864499997,
+     "exitTs": 1766805429163
+    },
+    {
+     "trade": 14,
+     "equity": -0.7775743455800008,
+     "pnl": 0.11530566985999993,
+     "exitTs": 1766805446425
+    },
+    {
+     "trade": 15,
+     "equity": -1.165798516600001,
+     "pnl": -0.38822417102000006,
+     "exitTs": 1766805729542
+    },
+    {
+     "trade": 16,
+     "equity": -0.9878097752800009,
+     "pnl": 0.17798874131999998,
+     "exitTs": 1766805816957
+    },
+    {
+     "trade": 17,
+     "equity": -1.151788870925001,
+     "pnl": -0.16397909564500007,
+     "exitTs": 1766806422425
+    },
+    {
+     "trade": 18,
+     "equity": -1.480857087050001,
+     "pnl": -0.32906821612500003,
+     "exitTs": 1766806424750
+    },
+    {
+     "trade": 19,
+     "equity": -1.644994398320001,
+     "pnl": -0.16413731127,
+     "exitTs": 1766806448970
+    },
+    {
+     "trade": 20,
+     "equity": -1.324008104700001,
+     "pnl": 0.32098629362000003,
+     "exitTs": 1766806848278
+    },
+    {
+     "trade": 21,
+     "equity": -1.169031061430001,
+     "pnl": 0.15497704327,
+     "exitTs": 1766807027532
+    },
+    {
+     "trade": 22,
+     "equity": -0.9354140983900012,
+     "pnl": 0.23361696303999985,
+     "exitTs": 1766807285243
+    },
+    {
+     "trade": 23,
+     "equity": -1.2533012771200012,
+     "pnl": -0.31788717873000005,
+     "exitTs": 1766807812115
+    },
+    {
+     "trade": 24,
+     "equity": -0.9318592358200013,
+     "pnl": 0.32144204129999987,
+     "exitTs": 1766808334941
+    },
+    {
+     "trade": 25,
+     "equity": -0.9446873707450013,
+     "pnl": -0.012828134925000005,
+     "exitTs": 1766809414125
+    },
+    {
+     "trade": 26,
+     "equity": -1.1373198691550013,
+     "pnl": -0.19263249841000002,
+     "exitTs": 1766809709587
+    },
+    {
+     "trade": 27,
+     "equity": -1.4386395419300013,
+     "pnl": -0.301319672775,
+     "exitTs": 1766810044052
+    },
+    {
+     "trade": 28,
+     "equity": -1.2658689050900014,
+     "pnl": 0.17277063683999996,
+     "exitTs": 1766810140616
+    },
+    {
+     "trade": 29,
+     "equity": -1.2709591006550014,
+     "pnl": -0.005090195565000025,
+     "exitTs": 1766810170894
+    },
+    {
+     "trade": 30,
+     "equity": -1.2479032571050015,
+     "pnl": 0.023055843549999976,
+     "exitTs": 1766810250348
+    },
+    {
+     "trade": 31,
+     "equity": -1.6101710361300015,
+     "pnl": -0.362267779025,
+     "exitTs": 1766810265359
+    },
+    {
+     "trade": 32,
+     "equity": -1.2610428945700014,
+     "pnl": 0.34912814155999994,
+     "exitTs": 1766810398703
+    },
+    {
+     "trade": 33,
+     "equity": -0.8779324647850015,
+     "pnl": 0.3831104297849999,
+     "exitTs": 1766810608367
+    },
+    {
+     "trade": 34,
+     "equity": -1.1403086693000015,
+     "pnl": -0.26237620451500004,
+     "exitTs": 1766810644498
+    },
+    {
+     "trade": 35,
+     "equity": -0.8796051262500015,
+     "pnl": 0.26070354304999993,
+     "exitTs": 1766810946866
+    },
+    {
+     "trade": 36,
+     "equity": -1.2137778940850015,
+     "pnl": -0.33417276783500005,
+     "exitTs": 1766811198281
+    },
+    {
+     "trade": 37,
+     "equity": -1.5549358524600014,
+     "pnl": -0.341157958375,
+     "exitTs": 1766811326547
+    },
+    {
+     "trade": 38,
+     "equity": -1.0212277009950015,
+     "pnl": 0.533708151465,
+     "exitTs": 1766811385289
+    },
+    {
+     "trade": 39,
+     "equity": -0.8677811398900015,
+     "pnl": 0.153446561105,
+     "exitTs": 1766811812473
+    },
+    {
+     "trade": 40,
+     "equity": -0.7727070449800015,
+     "pnl": 0.09507409490999992,
+     "exitTs": 1766811957921
+    },
+    {
+     "trade": 41,
+     "equity": -1.1733336179350016,
+     "pnl": -0.40062657295500004,
+     "exitTs": 1766811995640
+    },
+    {
+     "trade": 42,
+     "equity": -1.5503880051850016,
+     "pnl": -0.37705438725,
+     "exitTs": 1766812049827
+    },
+    {
+     "trade": 43,
+     "equity": -1.2680282491800017,
+     "pnl": 0.282359756005,
+     "exitTs": 1766812101125
+    },
+    {
+     "trade": 44,
+     "equity": -1.3445437330000016,
+     "pnl": -0.07651548382000001,
+     "exitTs": 1766812216533
+    },
+    {
+     "trade": 45,
+     "equity": -1.7056086694250017,
+     "pnl": -0.36106493642500004,
+     "exitTs": 1766812279132
+    },
+    {
+     "trade": 46,
+     "equity": -1.5543643250250017,
+     "pnl": 0.15124434439999995,
+     "exitTs": 1766812362885
+    },
+    {
+     "trade": 47,
+     "equity": -1.7086812719900017,
+     "pnl": -0.15431694696500006,
+     "exitTs": 1766812386424
+    },
+    {
+     "trade": 48,
+     "equity": -1.5217320713650018,
+     "pnl": 0.18694920062500003,
+     "exitTs": 1766812454993
+    },
+    {
+     "trade": 49,
+     "equity": -1.7511737922400017,
+     "pnl": -0.22944172087500003,
+     "exitTs": 1766812739877
+    },
+    {
+     "trade": 50,
+     "equity": -2.0264111850950015,
+     "pnl": -0.275237392855,
+     "exitTs": 1766812932619
+    },
+    {
+     "trade": 51,
+     "equity": -1.7340540366450015,
+     "pnl": 0.29235714845000005,
+     "exitTs": 1770104777640
+    },
+    {
+     "trade": 52,
+     "equity": -1.4897003401600015,
+     "pnl": 0.24435369648500005,
+     "exitTs": 1770104822945
+    },
+    {
+     "trade": 53,
+     "equity": -1.9109970021850016,
+     "pnl": -0.42129666202500005,
+     "exitTs": 1770104994380
+    },
+    {
+     "trade": 54,
+     "equity": -1.6207337618100017,
+     "pnl": 0.29026324037499984,
+     "exitTs": 1770105185717
+    },
+    {
+     "trade": 55,
+     "equity": -1.3176318176900017,
+     "pnl": 0.30310194412,
+     "exitTs": 1770105264342
+    },
+    {
+     "trade": 56,
+     "equity": -1.0931378852500018,
+     "pnl": 0.22449393243999993,
+     "exitTs": 1770105409720
+    },
+    {
+     "trade": 57,
+     "equity": -1.3957233746300017,
+     "pnl": -0.30258548938,
+     "exitTs": 1770105460367
+    },
+    {
+     "trade": 58,
+     "equity": -1.7263599973900017,
+     "pnl": -0.33063662276000005,
+     "exitTs": 1770105751432
+    },
+    {
+     "trade": 59,
+     "equity": -1.4586041843150017,
+     "pnl": 0.267755813075,
+     "exitTs": 1770105892584
+    },
+    {
+     "trade": 60,
+     "equity": -1.2914499012450018,
+     "pnl": 0.16715428306999996,
+     "exitTs": 1770106116539
+    },
+    {
+     "trade": 61,
+     "equity": -1.3680077312000019,
+     "pnl": -0.07655782995500005,
+     "exitTs": 1770106245927
+    },
+    {
+     "trade": 62,
+     "equity": -1.6624622002250018,
+     "pnl": -0.294454469025,
+     "exitTs": 1770106270506
+    },
+    {
+     "trade": 63,
+     "equity": -2.0453179252300018,
+     "pnl": -0.38285572500500004,
+     "exitTs": 1770106633231
+    },
+    {
+     "trade": 64,
+     "equity": -1.8573043217850018,
+     "pnl": 0.188013603445,
+     "exitTs": 1770106755164
+    },
+    {
+     "trade": 65,
+     "equity": -1.9091368925300018,
+     "pnl": -0.05183257074500003,
+     "exitTs": 1770106896221
+    },
+    {
+     "trade": 66,
+     "equity": -2.2079015610000017,
+     "pnl": -0.29876466847,
+     "exitTs": 1770107551924
+    },
+    {
+     "trade": 67,
+     "equity": -2.3187765447050017,
+     "pnl": -0.110874983705,
+     "exitTs": 1770107575081
+    },
+    {
+     "trade": 68,
+     "equity": -2.5857223523550017,
+     "pnl": -0.26694580765000003,
+     "exitTs": 1770107725163
+    }
+   ]
+  }
+ },
+ "grid": [
+  {
+   "takeProfitPercent": 40,
+   "stopLossPercent": 15,
+   "totalPnl": -3.7615250002750034,
+   "winRate": 20.588235294117645,
+   "trades": 68,
+   "maxDrawdown": 3.834054440860003,
+   "profitFactor": 0.4256448119289276
+  },
+  {
+   "takeProfitPercent": 40,
+   "stopLossPercent": 20,
+   "totalPnl": -3.4371483009650032,
+   "winRate": 26.47058823529412,
+   "trades": 68,
+   "maxDrawdown": 3.4371483009650032,
+   "profitFactor": 0.5144740076858315
+  },
+  {
+   "takeProfitPercent": 40,
+   "stopLossPercent": 25,
+   "totalPnl": -3.7569929768600026,
+   "winRate": 29.411764705882355,
+   "trades": 68,
+   "maxDrawdown": 3.7569929768600026,
+   "profitFactor": 0.5394302705430382
+  },
+  {
+   "takeProfitPercent": 40,
+   "stopLossPercent": 30,
+   "totalPnl": -4.1008504466900035,
+   "winRate": 29.411764705882355,
+   "trades": 68,
+   "maxDrawdown": 4.1008504466900035,
+   "profitFactor": 0.5176111571180831
+  },
+  {
+   "takeProfitPercent": 40,
+   "stopLossPercent": 35,
+   "totalPnl": -3.196840521300002,
+   "winRate": 35.294117647058826,
+   "trades": 68,
+   "maxDrawdown": 3.2546797250750017,
+   "profitFactor": 0.6161616380164968
+  },
+  {
+   "takeProfitPercent": 40,
+   "stopLossPercent": 40,
+   "totalPnl": -3.2823775509400033,
+   "winRate": 36.76470588235294,
+   "trades": 68,
+   "maxDrawdown": 3.2995423853550028,
+   "profitFactor": 0.6234618204603344
+  },
+  {
+   "takeProfitPercent": 40,
+   "stopLossPercent": 50,
+   "totalPnl": -4.4088041651550025,
+   "winRate": 38.23529411764706,
+   "trades": 68,
+   "maxDrawdown": 4.4088041651550025,
+   "profitFactor": 0.5582119413134093
+  },
+  {
+   "takeProfitPercent": 40,
+   "stopLossPercent": 60,
+   "totalPnl": -2.5857223523550017,
+   "winRate": 44.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 2.5857223523550017,
+   "profitFactor": 0.7212641981045961
+  },
+  {
+   "takeProfitPercent": 60,
+   "stopLossPercent": 15,
+   "totalPnl": -4.254186501860004,
+   "winRate": 17.647058823529413,
+   "trades": 68,
+   "maxDrawdown": 4.254186501860004,
+   "profitFactor": 0.3636462920057588
+  },
+  {
+   "takeProfitPercent": 60,
+   "stopLossPercent": 20,
+   "totalPnl": -4.037609713540003,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 4.037609713540003,
+   "profitFactor": 0.44224917425285426
+  },
+  {
+   "takeProfitPercent": 60,
+   "stopLossPercent": 25,
+   "totalPnl": -4.357454389435003,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 4.357454389435003,
+   "profitFactor": 0.47608734771814487
+  },
+  {
+   "takeProfitPercent": 60,
+   "stopLossPercent": 30,
+   "totalPnl": -4.701311859265004,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 4.701311859265004,
+   "profitFactor": 0.45718580560851296
+  },
+  {
+   "takeProfitPercent": 60,
+   "stopLossPercent": 35,
+   "totalPnl": -4.150167786215003,
+   "winRate": 27.941176470588236,
+   "trades": 68,
+   "maxDrawdown": 4.150167786215003,
+   "profitFactor": 0.5158508353618739
+  },
+  {
+   "takeProfitPercent": 60,
+   "stopLossPercent": 40,
+   "totalPnl": -4.506365037590004,
+   "winRate": 29.411764705882355,
+   "trades": 68,
+   "maxDrawdown": 4.506365037590004,
+   "profitFactor": 0.4970981076137862
+  },
+  {
+   "takeProfitPercent": 60,
+   "stopLossPercent": 50,
+   "totalPnl": -5.591620841460004,
+   "winRate": 30.88235294117647,
+   "trades": 68,
+   "maxDrawdown": 5.591620841460004,
+   "profitFactor": 0.45303142824866566
+  },
+  {
+   "takeProfitPercent": 60,
+   "stopLossPercent": 60,
+   "totalPnl": -3.830059628730003,
+   "winRate": 35.294117647058826,
+   "trades": 68,
+   "maxDrawdown": 3.830059628730003,
+   "profitFactor": 0.5986700966849039
+  },
+  {
+   "takeProfitPercent": 80,
+   "stopLossPercent": 15,
+   "totalPnl": -4.721605052860002,
+   "winRate": 16.176470588235293,
+   "trades": 68,
+   "maxDrawdown": 4.721605052860002,
+   "profitFactor": 0.2983255953909569
+  },
+  {
+   "takeProfitPercent": 80,
+   "stopLossPercent": 20,
+   "totalPnl": -4.578793833995002,
+   "winRate": 19.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 4.578793833995002,
+   "profitFactor": 0.37248919883968157
+  },
+  {
+   "takeProfitPercent": 80,
+   "stopLossPercent": 25,
+   "totalPnl": -4.898638509890003,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 4.898638509890003,
+   "profitFactor": 0.415074233672393
+  },
+  {
+   "takeProfitPercent": 80,
+   "stopLossPercent": 30,
+   "totalPnl": -5.242495979720003,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 5.242495979720003,
+   "profitFactor": 0.3987040167384532
+  },
+  {
+   "takeProfitPercent": 80,
+   "stopLossPercent": 35,
+   "totalPnl": -4.939248974420003,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 4.939248974420003,
+   "profitFactor": 0.42764863920395996
+  },
+  {
+   "takeProfitPercent": 80,
+   "stopLossPercent": 40,
+   "totalPnl": -5.295446225795002,
+   "winRate": 26.47058823529412,
+   "trades": 68,
+   "maxDrawdown": 5.295446225795002,
+   "profitFactor": 0.41281680937545107
+  },
+  {
+   "takeProfitPercent": 80,
+   "stopLossPercent": 50,
+   "totalPnl": -6.259977866695002,
+   "winRate": 27.941176470588236,
+   "trades": 68,
+   "maxDrawdown": 6.259977866695002,
+   "profitFactor": 0.3910878993014189
+  },
+  {
+   "takeProfitPercent": 80,
+   "stopLossPercent": 60,
+   "totalPnl": -4.592965991340002,
+   "winRate": 32.35294117647059,
+   "trades": 68,
+   "maxDrawdown": 4.592965991340002,
+   "profitFactor": 0.5216200697827572
+  },
+  {
+   "takeProfitPercent": 100,
+   "stopLossPercent": 15,
+   "totalPnl": -4.857750596470002,
+   "winRate": 16.176470588235293,
+   "trades": 68,
+   "maxDrawdown": 4.857750596470002,
+   "profitFactor": 0.27809310195213016
+  },
+  {
+   "takeProfitPercent": 100,
+   "stopLossPercent": 20,
+   "totalPnl": -4.555203221895002,
+   "winRate": 19.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 4.555203221895002,
+   "profitFactor": 0.375722225797311
+  },
+  {
+   "takeProfitPercent": 100,
+   "stopLossPercent": 25,
+   "totalPnl": -4.774347302395003,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 4.774347302395003,
+   "profitFactor": 0.4299153226086389
+  },
+  {
+   "takeProfitPercent": 100,
+   "stopLossPercent": 30,
+   "totalPnl": -5.118204772225003,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 5.118204772225003,
+   "profitFactor": 0.412959784241295
+  },
+  {
+   "takeProfitPercent": 100,
+   "stopLossPercent": 35,
+   "totalPnl": -4.913257767600004,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 4.913257767600004,
+   "profitFactor": 0.43066045388858115
+  },
+  {
+   "takeProfitPercent": 100,
+   "stopLossPercent": 40,
+   "totalPnl": -5.269455018975002,
+   "winRate": 26.47058823529412,
+   "trades": 68,
+   "maxDrawdown": 5.269455018975002,
+   "profitFactor": 0.4156988327400559
+  },
+  {
+   "takeProfitPercent": 100,
+   "stopLossPercent": 50,
+   "totalPnl": -6.206039973925003,
+   "winRate": 27.941176470588236,
+   "trades": 68,
+   "maxDrawdown": 6.206039973925003,
+   "profitFactor": 0.39633447305826436
+  },
+  {
+   "takeProfitPercent": 100,
+   "stopLossPercent": 60,
+   "totalPnl": -4.045395413580003,
+   "winRate": 32.35294117647059,
+   "trades": 68,
+   "maxDrawdown": 4.045395413580003,
+   "profitFactor": 0.5786522305415659
+  },
+  {
+   "takeProfitPercent": 120,
+   "stopLossPercent": 15,
+   "totalPnl": -5.118948307355003,
+   "winRate": 16.176470588235293,
+   "trades": 68,
+   "maxDrawdown": 5.118948307355003,
+   "profitFactor": 0.23927669392590986
+  },
+  {
+   "takeProfitPercent": 120,
+   "stopLossPercent": 20,
+   "totalPnl": -5.3869347968250025,
+   "winRate": 19.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 5.3869347968250025,
+   "profitFactor": 0.26173575559206014
+  },
+  {
+   "takeProfitPercent": 120,
+   "stopLossPercent": 25,
+   "totalPnl": -5.876894135105004,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 5.876894135105004,
+   "profitFactor": 0.2982648548852197
+  },
+  {
+   "takeProfitPercent": 120,
+   "stopLossPercent": 30,
+   "totalPnl": -6.220751604935004,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 6.220751604935004,
+   "profitFactor": 0.28650151237407057
+  },
+  {
+   "takeProfitPercent": 120,
+   "stopLossPercent": 35,
+   "totalPnl": -6.015804600310003,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 6.015804600310003,
+   "profitFactor": 0.3028992935763429
+  },
+  {
+   "takeProfitPercent": 120,
+   "stopLossPercent": 40,
+   "totalPnl": -6.372001851685004,
+   "winRate": 26.47058823529412,
+   "trades": 68,
+   "maxDrawdown": 6.372001851685004,
+   "profitFactor": 0.2934434194209536
+  },
+  {
+   "takeProfitPercent": 120,
+   "stopLossPercent": 50,
+   "totalPnl": -7.168425783460004,
+   "winRate": 27.941176470588236,
+   "trades": 68,
+   "maxDrawdown": 7.168425783460004,
+   "profitFactor": 0.3027225821785529
+  },
+  {
+   "takeProfitPercent": 120,
+   "stopLossPercent": 60,
+   "totalPnl": -4.782673730990002,
+   "winRate": 32.35294117647059,
+   "trades": 68,
+   "maxDrawdown": 4.782673730990002,
+   "profitFactor": 0.5018610784410945
+  },
+  {
+   "takeProfitPercent": 150,
+   "stopLossPercent": 15,
+   "totalPnl": -5.004356963205003,
+   "winRate": 16.176470588235293,
+   "trades": 68,
+   "maxDrawdown": 5.004356963205003,
+   "profitFactor": 0.25630603294932036
+  },
+  {
+   "takeProfitPercent": 150,
+   "stopLossPercent": 20,
+   "totalPnl": -5.272343452675003,
+   "winRate": 19.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 5.272343452675003,
+   "profitFactor": 0.27744017662096343
+  },
+  {
+   "takeProfitPercent": 150,
+   "stopLossPercent": 25,
+   "totalPnl": -5.710101742775004,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 5.710101742775004,
+   "profitFactor": 0.3181808310700863
+  },
+  {
+   "takeProfitPercent": 150,
+   "stopLossPercent": 30,
+   "totalPnl": -6.053959212605004,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 6.053959212605004,
+   "profitFactor": 0.305632017372945
+  },
+  {
+   "takeProfitPercent": 150,
+   "stopLossPercent": 35,
+   "totalPnl": -5.849012207980004,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 5.849012207980004,
+   "profitFactor": 0.32222689848447816
+  },
+  {
+   "takeProfitPercent": 150,
+   "stopLossPercent": 40,
+   "totalPnl": -6.205209459355005,
+   "winRate": 26.47058823529412,
+   "trades": 68,
+   "maxDrawdown": 6.205209459355005,
+   "profitFactor": 0.3119381193809229
+  },
+  {
+   "takeProfitPercent": 150,
+   "stopLossPercent": 50,
+   "totalPnl": -6.860911246945004,
+   "winRate": 27.941176470588236,
+   "trades": 68,
+   "maxDrawdown": 6.860911246945004,
+   "profitFactor": 0.3326347202742677
+  },
+  {
+   "takeProfitPercent": 150,
+   "stopLossPercent": 60,
+   "totalPnl": -4.158085242810003,
+   "winRate": 32.35294117647059,
+   "trades": 68,
+   "maxDrawdown": 4.158085242810003,
+   "profitFactor": 0.5669150322377063
+  },
+  {
+   "takeProfitPercent": 180,
+   "stopLossPercent": 15,
+   "totalPnl": -4.8075656699300024,
+   "winRate": 16.176470588235293,
+   "trades": 68,
+   "maxDrawdown": 4.8075656699300024,
+   "profitFactor": 0.2855510485732634
+  },
+  {
+   "takeProfitPercent": 180,
+   "stopLossPercent": 20,
+   "totalPnl": -5.075552159400002,
+   "winRate": 19.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 5.075552159400002,
+   "profitFactor": 0.3044098692040922
+  },
+  {
+   "takeProfitPercent": 180,
+   "stopLossPercent": 25,
+   "totalPnl": -5.791258988630003,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 5.791258988630003,
+   "profitFactor": 0.3084901865922517
+  },
+  {
+   "takeProfitPercent": 180,
+   "stopLossPercent": 30,
+   "totalPnl": -6.135116458460005,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 6.135116458460005,
+   "profitFactor": 0.29632356465615584
+  },
+  {
+   "takeProfitPercent": 180,
+   "stopLossPercent": 35,
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 5.930169453835004,
+   "profitFactor": 0.3128225415986174
+  },
+  {
+   "takeProfitPercent": 180,
+   "stopLossPercent": 40,
+   "totalPnl": -6.2863667052100025,
+   "winRate": 26.47058823529412,
+   "trades": 68,
+   "maxDrawdown": 6.2863667052100025,
+   "profitFactor": 0.30293903440649567
+  },
+  {
+   "takeProfitPercent": 180,
+   "stopLossPercent": 50,
+   "totalPnl": -6.665386182990003,
+   "winRate": 27.941176470588236,
+   "trades": 68,
+   "maxDrawdown": 6.778953997615003,
+   "profitFactor": 0.3516535698560668
+  },
+  {
+   "takeProfitPercent": 180,
+   "stopLossPercent": 60,
+   "totalPnl": -4.171741057245003,
+   "winRate": 32.35294117647059,
+   "trades": 68,
+   "maxDrawdown": 4.209510944035003,
+   "profitFactor": 0.5654927122012
+  },
+  {
+   "takeProfitPercent": 220,
+   "stopLossPercent": 15,
+   "totalPnl": -5.410890169200004,
+   "winRate": 16.176470588235293,
+   "trades": 68,
+   "maxDrawdown": 5.410890169200004,
+   "profitFactor": 0.19589141925824913
+  },
+  {
+   "takeProfitPercent": 220,
+   "stopLossPercent": 20,
+   "totalPnl": -5.678876658670003,
+   "winRate": 19.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 5.678876658670003,
+   "profitFactor": 0.22172594552844527
+  },
+  {
+   "takeProfitPercent": 220,
+   "stopLossPercent": 25,
+   "totalPnl": -6.3945834879000065,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 6.3945834879000065,
+   "profitFactor": 0.2364497524252389
+  },
+  {
+   "takeProfitPercent": 220,
+   "stopLossPercent": 30,
+   "totalPnl": -6.738440957730005,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 6.738440957730005,
+   "profitFactor": 0.22712435126282277
+  },
+  {
+   "takeProfitPercent": 220,
+   "stopLossPercent": 35,
+   "totalPnl": -6.533493953105006,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 6.533493953105006,
+   "profitFactor": 0.24291037480015726
+  },
+  {
+   "takeProfitPercent": 220,
+   "stopLossPercent": 40,
+   "totalPnl": -6.889691204480004,
+   "winRate": 26.47058823529412,
+   "trades": 68,
+   "maxDrawdown": 6.889691204480004,
+   "profitFactor": 0.23603966665583317
+  },
+  {
+   "takeProfitPercent": 220,
+   "stopLossPercent": 50,
+   "totalPnl": -7.184025331885003,
+   "winRate": 27.941176470588236,
+   "trades": 68,
+   "maxDrawdown": 7.184025331885003,
+   "profitFactor": 0.301205204001874
+  },
+  {
+   "takeProfitPercent": 220,
+   "stopLossPercent": 60,
+   "totalPnl": -4.629580494080002,
+   "winRate": 32.35294117647059,
+   "trades": 68,
+   "maxDrawdown": 4.629580494080002,
+   "profitFactor": 0.5178064897783056
+  },
+  {
+   "takeProfitPercent": 260,
+   "stopLossPercent": 15,
+   "totalPnl": -5.410890169200004,
+   "winRate": 16.176470588235293,
+   "trades": 68,
+   "maxDrawdown": 5.410890169200004,
+   "profitFactor": 0.19589141925824913
+  },
+  {
+   "takeProfitPercent": 260,
+   "stopLossPercent": 20,
+   "totalPnl": -5.678876658670003,
+   "winRate": 19.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 5.678876658670003,
+   "profitFactor": 0.22172594552844527
+  },
+  {
+   "takeProfitPercent": 260,
+   "stopLossPercent": 25,
+   "totalPnl": -6.3945834879000065,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 6.3945834879000065,
+   "profitFactor": 0.2364497524252389
+  },
+  {
+   "takeProfitPercent": 260,
+   "stopLossPercent": 30,
+   "totalPnl": -6.738440957730005,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 6.738440957730005,
+   "profitFactor": 0.22712435126282277
+  },
+  {
+   "takeProfitPercent": 260,
+   "stopLossPercent": 35,
+   "totalPnl": -6.533493953105006,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 6.533493953105006,
+   "profitFactor": 0.24291037480015726
+  },
+  {
+   "takeProfitPercent": 260,
+   "stopLossPercent": 40,
+   "totalPnl": -6.889691204480004,
+   "winRate": 26.47058823529412,
+   "trades": 68,
+   "maxDrawdown": 6.889691204480004,
+   "profitFactor": 0.23603966665583317
+  },
+  {
+   "takeProfitPercent": 260,
+   "stopLossPercent": 50,
+   "totalPnl": -7.620948805920004,
+   "winRate": 27.941176470588236,
+   "trades": 68,
+   "maxDrawdown": 7.620948805920004,
+   "profitFactor": 0.2587053747557307
+  },
+  {
+   "takeProfitPercent": 260,
+   "stopLossPercent": 60,
+   "totalPnl": -5.0665039681150015,
+   "winRate": 32.35294117647059,
+   "trades": 68,
+   "maxDrawdown": 5.0665039681150015,
+   "profitFactor": 0.4722987674452347
+  },
+  {
+   "takeProfitPercent": 300,
+   "stopLossPercent": 15,
+   "totalPnl": -5.410890169200004,
+   "winRate": 16.176470588235293,
+   "trades": 68,
+   "maxDrawdown": 5.410890169200004,
+   "profitFactor": 0.19589141925824913
+  },
+  {
+   "takeProfitPercent": 300,
+   "stopLossPercent": 20,
+   "totalPnl": -5.678876658670003,
+   "winRate": 19.11764705882353,
+   "trades": 68,
+   "maxDrawdown": 5.678876658670003,
+   "profitFactor": 0.22172594552844527
+  },
+  {
+   "takeProfitPercent": 300,
+   "stopLossPercent": 25,
+   "totalPnl": -6.3945834879000065,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 6.3945834879000065,
+   "profitFactor": 0.2364497524252389
+  },
+  {
+   "takeProfitPercent": 300,
+   "stopLossPercent": 30,
+   "totalPnl": -6.738440957730005,
+   "winRate": 22.058823529411764,
+   "trades": 68,
+   "maxDrawdown": 6.738440957730005,
+   "profitFactor": 0.22712435126282277
+  },
+  {
+   "takeProfitPercent": 300,
+   "stopLossPercent": 35,
+   "totalPnl": -6.533493953105006,
+   "winRate": 25,
+   "trades": 68,
+   "maxDrawdown": 6.533493953105006,
+   "profitFactor": 0.24291037480015726
+  },
+  {
+   "takeProfitPercent": 300,
+   "stopLossPercent": 40,
+   "totalPnl": -6.889691204480004,
+   "winRate": 26.47058823529412,
+   "trades": 68,
+   "maxDrawdown": 6.889691204480004,
+   "profitFactor": 0.23603966665583317
+  },
+  {
+   "takeProfitPercent": 300,
+   "stopLossPercent": 50,
+   "totalPnl": -7.620948805920004,
+   "winRate": 27.941176470588236,
+   "trades": 68,
+   "maxDrawdown": 7.620948805920004,
+   "profitFactor": 0.2587053747557307
+  },
+  {
+   "takeProfitPercent": 300,
+   "stopLossPercent": 60,
+   "totalPnl": -5.0665039681150015,
+   "winRate": 32.35294117647059,
+   "trades": 68,
+   "maxDrawdown": 5.0665039681150015,
+   "profitFactor": 0.4722987674452347
+  }
+ ],
+ "trailingSweep": [
+  {
+   "value": 10,
+   "totalPnl": -4.813422990160004,
+   "winRate": 30.88235294117647,
+   "trades": 68
+  },
+  {
+   "value": 15,
+   "totalPnl": -5.504527812245003,
+   "winRate": 29.411764705882355,
+   "trades": 68
+  },
+  {
+   "value": 20,
+   "totalPnl": -5.403623817305003,
+   "winRate": 29.411764705882355,
+   "trades": 68
+  },
+  {
+   "value": 25,
+   "totalPnl": -5.972902138295004,
+   "winRate": 27.941176470588236,
+   "trades": 68
+  },
+  {
+   "value": 28,
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68
+  },
+  {
+   "value": 35,
+   "totalPnl": -4.3357711461100035,
+   "winRate": 23.52941176470588,
+   "trades": 68
+  },
+  {
+   "value": 45,
+   "totalPnl": -4.754777209120004,
+   "winRate": 20.588235294117645,
+   "trades": 68
+  },
+  {
+   "value": 60,
+   "totalPnl": -4.464542493130003,
+   "winRate": 16.176470588235293,
+   "trades": 68
+  },
+  {
+   "value": null,
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68
+  }
+ ],
+ "holdSweep": [
+  {
+   "value": 60,
+   "totalPnl": -5.351102394920003,
+   "winRate": 30.88235294117647,
+   "trades": 68
+  },
+  {
+   "value": 120,
+   "totalPnl": -5.493137812025004,
+   "winRate": 29.411764705882355,
+   "trades": 68
+  },
+  {
+   "value": 300,
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68
+  },
+  {
+   "value": 600,
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68
+  },
+  {
+   "value": 1200,
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68
+  },
+  {
+   "value": 1800,
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68
+  },
+  {
+   "value": 3600,
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68
+  },
+  {
+   "value": null,
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68
+  }
+ ],
+ "mcSweep": [
+  {
+   "minMcSol": null,
+   "maxMcSol": null,
+   "label": "0-inf",
+   "totalPnl": -5.930169453835004,
+   "winRate": 25,
+   "trades": 68
+  },
+  {
+   "minMcSol": null,
+   "maxMcSol": 10,
+   "label": "0-10",
+   "totalPnl": -1.5583774692850012,
+   "winRate": 31.57894736842105,
+   "trades": 38
+  },
+  {
+   "minMcSol": 5,
+   "maxMcSol": 20,
+   "label": "5-20",
+   "totalPnl": -5.917623358260004,
+   "winRate": 25,
+   "trades": 60
+  },
+  {
+   "minMcSol": 10,
+   "maxMcSol": 30,
+   "label": "10-30",
+   "totalPnl": -5.0324064967750015,
+   "winRate": 15.151515151515152,
+   "trades": 33
+  },
+  {
+   "minMcSol": 20,
+   "maxMcSol": 50,
+   "label": "20-50",
+   "totalPnl": -0.6143462386900002,
+   "winRate": 20,
+   "trades": 5
+  },
+  {
+   "minMcSol": 30,
+   "maxMcSol": null,
+   "label": "30-inf",
+   "totalPnl": 0,
+   "winRate": 0,
+   "trades": 0
+  }
+ ],
+ "latency": {
+  "perTrade": [
+   {
+    "mint": "BrAZcWM8Z3t1pRGguAEFoMFknSmtDRZeRtx9N4Fvpump",
+    "targetMcSol": 5.574004188,
+    "simMcSol": 7.131937085,
+    "slippagePct": 27.94997715204443,
+    "pnl": -0.22888730279,
+    "counterfactualPnl": -0.06590743714913495
+   },
+   {
+    "mint": "AbNwnoZ9EtozwSVBNfNAYGmmkDnEe85sjBHaUQNwpump",
+    "targetMcSol": 13.389166724,
+    "simMcSol": 14.952633551,
+    "slippagePct": 11.677103282293844,
+    "pnl": -0.2174801438700001,
+    "counterfactualPnl": -0.14805744623595532
+   },
+   {
+    "mint": "8z5g5i8asdnxmhgMJ1D6Bcf8ig7ruyDAd2JoBJhJpump",
+    "targetMcSol": 7.63310839,
+    "simMcSol": 8.71030839,
+    "slippagePct": 14.11220625939519,
+    "pnl": 0.07242093390499994,
+    "counterfactualPnl": 0.19723224029894273
+   },
+   {
+    "mint": "CJKnRKq1u137dVeWoVXonNo4N1Z5ow22fbbfNRgvpimp",
+    "targetMcSol": 8.383486248,
+    "simMcSol": 9.183486248,
+    "slippagePct": 9.542569479264671,
+    "pnl": 0.04546686003500001,
+    "counterfactualPnl": 0.12729123091550895
+   },
+   {
+    "mint": "3kGR1CfJuDBGBf5s3YdLohwSVHvaXSnXF4EaYGstpump",
+    "targetMcSol": 10.449748241,
+    "simMcSol": 11.319048937,
+    "slippagePct": 8.318867363610389,
+    "pnl": 0.017117078594999995,
+    "counterfactualPnl": 0.0860902286523593
+   },
+   {
+    "mint": "CLX6G8mHRbFZqxfuNX2Kk6q6CzXbD5A6hcf6pMQhTuKe",
+    "targetMcSol": 7.160364956,
+    "simMcSol": 8.49854876,
+    "slippagePct": 18.68876533840185,
+    "pnl": -0.18868742369000008,
+    "counterfactualPnl": -0.07219799897867725
+   },
+   {
+    "mint": "4eEvouYMnf9mbU3ix6s6BdLtC4XTDn15fU76XrQfpump",
+    "targetMcSol": 4.713001693,
+    "simMcSol": 5.513001693,
+    "slippagePct": 16.974320233922306,
+    "pnl": -0.08955825494000008,
+    "counterfactualPnl": 0.03307132037002091
+   },
+   {
+    "mint": "EQC2PLBPuZofCmTvEks47Bt3pTDs7VdEK4k6BZMcpump",
+    "targetMcSol": 6.636827483,
+    "simMcSol": 10.050756502,
+    "slippagePct": 51.43917071439116,
+    "pnl": -0.207262101575,
+    "counterfactualPnl": 0.10381005837045723
+   },
+   {
+    "mint": "8Ukiywr4dVqk6SXaiPnbEEDsaeW2vpAutm3XcZv5pump",
+    "targetMcSol": 3.179475355,
+    "simMcSol": 4.496723096,
+    "slippagePct": 41.42972012437568,
+    "pnl": -0.07976184189499999,
+    "counterfactualPnl": 0.22360237765178492
+   },
+   {
+    "mint": "GDZiUGEu7YP2RiyDcWRt5XPdG18pGNgw8znUekPDpump",
+    "targetMcSol": 7.033295659,
+    "simMcSol": 8.943654601,
+    "slippagePct": 27.161647037480247,
+    "pnl": -0.1695221752650001,
+    "counterfactualPnl": 0.004985383783601582
+   },
+   {
+    "mint": "GmmxJTjbJP7nGai1aaTun1jQYtNWfqTaVbzjrLnHpump",
+    "targetMcSol": 13.350110931,
+    "simMcSol": 14.683620262,
+    "slippagePct": 9.98875093916626,
+    "pnl": -0.21284444329500002,
+    "counterfactualPnl": -0.15299628699756246
+   },
+   {
+    "mint": "94oCze1UULaXepQbga7wpQrpGUV9jGdfVUG76h6Jpump",
+    "targetMcSol": 4.938023458,
+    "simMcSol": 9.052879412,
+    "slippagePct": 83.3300203816083,
+    "pnl": -0.15043046497000007,
+    "counterfactualPnl": 0.40085556340901013
+   },
+   {
+    "mint": "ArXh3aXeoocZCm2qbWMA6y8twhGSHQh6WAwBTAS8pump",
+    "targetMcSol": 9.447579905,
+    "simMcSol": 10.764779905,
+    "slippagePct": 13.94219486096,
+    "pnl": 0.19239639738999995,
+    "counterfactualPnl": 0.3324313002905758
+   },
+   {
+    "mint": "GvEjpHiVS1kbb1wPQtsQkn6SQ51AD1ApGQZggxaZpimp",
+    "targetMcSol": 4.488315605,
+    "simMcSol": 5.826537097,
+    "slippagePct": 29.815672732755598,
+    "pnl": 0.51758616495,
+    "counterfactualPnl": 0.914011224591488
+   },
+   {
+    "mint": "CKaX6Lc5ZShZXJs8JGsDEQi2TERK4pg8XTYH9A1TiRaH",
+    "targetMcSol": 21.766553297,
+    "simMcSol": 22.713284645,
+    "slippagePct": 4.349477545121875,
+    "pnl": -0.26109726377000003,
+    "counterfactualPnl": -0.2371358729622142
+   },
+   {
+    "mint": "F6UBxHthWR9dDVxekvh8bRn4kqRDcztWwPHjPihGpump",
+    "targetMcSol": 9.508912616,
+    "simMcSol": 10.259326563,
+    "slippagePct": 7.891690430905104,
+    "pnl": 0.04361451927,
+    "counterfactualPnl": 0.11113696841266521
+   },
+   {
+    "mint": "FscmpTqHH5GNjoJDEjyAB6jENjuEt72PJ4tEfYEqpump",
+    "targetMcSol": 13.225999109,
+    "simMcSol": 14.715592608,
+    "slippagePct": 11.26261605436193,
+    "pnl": -0.23408610127,
+    "counterfactualPnl": -0.16899787773124603
+   },
+   {
+    "mint": "EjaRfB2zUueM1upZ96hobtT3pFFBV1CK7HhJ2L7Upump",
+    "targetMcSol": 3.828583648,
+    "simMcSol": 5.310082147,
+    "slippagePct": 38.6957328142462,
+    "pnl": -0.11857638055000005,
+    "counterfactualPnl": 0.14974897050324731
+   },
+   {
+    "mint": "cyozDPC9AUqv1h6zfEx5WPeqhtWZmKYg3nMDAwvpump",
+    "targetMcSol": 6.717851981,
+    "simMcSol": 7.517851981,
+    "slippagePct": 11.908568427268536,
+    "pnl": -0.16413731127,
+    "counterfactualPnl": -0.08698613966784621
+   },
+   {
+    "mint": "26Pumi7TUc8axQSgXJhagkNFAcKbDypCDkSTnTVEpump",
+    "targetMcSol": 8.1815787,
+    "simMcSol": 9.403018281,
+    "slippagePct": 14.92914296601462,
+    "pnl": 0.17346505395999992,
+    "counterfactualPnl": 0.32058654074580134
+   },
+   {
+    "mint": "7cjeLRTKBkoJ5HANJjpCGKGEtqbaunsLSsRoL4eFpump",
+    "targetMcSol": 9.775770858,
+    "simMcSol": 11.015229015,
+    "slippagePct": 12.678878985647351,
+    "pnl": -0.21933266095000004,
+    "counterfactualPnl": -0.1441890862443943
+   },
+   {
+    "mint": "H1vXAFAgBAKEPFemCuoAAVCkaV5o6wZRu2cdaipKpump",
+    "targetMcSol": 13.329695115,
+    "simMcSol": 14.650113292,
+    "slippagePct": 9.90583929796057,
+    "pnl": -0.08214111924500006,
+    "counterfactualPnl": -0.009842471415516155
+   },
+   {
+    "mint": "5ESbwKEzxQHGux1Vo1ChKbYjLjZKF5sxsQDxQjcFpump",
+    "targetMcSol": 13.987854657,
+    "simMcSol": 15.508351571,
+    "slippagePct": 10.870122340305361,
+    "pnl": -0.2535535319350001,
+    "counterfactualPnl": -0.19284971765122033
+   },
+   {
+    "mint": "4tzbvbcJdTBdfaTR42iqH6Khwj4pGCLC3PbyUUxSpump",
+    "targetMcSol": 15.094271711,
+    "simMcSol": 16.171471711,
+    "slippagePct": 7.136482108076711,
+    "pnl": -0.21569338342000005,
+    "counterfactualPnl": -0.17313806841849072
+   },
+   {
+    "mint": "BhsaAboaKBxgos7r8LpoyDMMcx2CLBHxwwLTZAuqpump",
+    "targetMcSol": 7.495194797,
+    "simMcSol": 8.812394797,
+    "slippagePct": 17.573926171034508,
+    "pnl": -0.012828134925000005,
+    "counterfactualPnl": 0.12761773862296
+   },
+   {
+    "mint": "FmPZRx33zLGnE5jwuWpGeFPLc5b5ooRVMuTE8dbSpump",
+    "targetMcSol": 6.278663368,
+    "simMcSol": 7.599557822,
+    "slippagePct": 21.037828859118417,
+    "pnl": -0.13187777819500002,
+    "counterfactualPnl": 0.011205170861169761
+   },
+   {
+    "mint": "FDsZTz2uXhtiYvSHZMP1fNrn9Uw2K57kfHBPB8qgpump",
+    "targetMcSol": 9.810171747,
+    "simMcSol": 11.130809014,
+    "slippagePct": 13.461917905808916,
+    "pnl": -0.2142714590900001,
+    "counterfactualPnl": -0.13380573361310646
+   },
+   {
+    "mint": "5KRq8Zp4txANVgqz7h8cXkc6vciDb6BEiWu1LT2dpump",
+    "targetMcSol": 8.384157283,
+    "simMcSol": 9.836258754,
+    "slippagePct": 17.31958766976293,
+    "pnl": -0.005090195565000025,
+    "counterfactualPnl": 0.13466325543003244
+   },
+   {
+    "mint": "3GfeFHRYx5ZrDWWyN2kxDHtDKGGKPNKRR526hLydpump",
+    "targetMcSol": 10.900846563,
+    "simMcSol": 11.978046563,
+    "slippagePct": 9.881801324094093,
+    "pnl": -0.0014664022350000805,
+    "counterfactualPnl": 0.07862891756116909
+   },
+   {
+    "mint": "9TWZnLpH3o7Kva6GXXKbaeSNrLM3C4jFR3Yeckuhpump",
+    "targetMcSol": 19.321747231,
+    "simMcSol": 19.972752831,
+    "slippagePct": 3.3692894965291833,
+    "pnl": -0.23245117955500003,
+    "counterfactualPnl": -0.2129245020204878
+   },
+   {
+    "mint": "Axc7XSBCRPvYvJfzcVHq3guJ4HoqwUD5em9EDxKKpump",
+    "targetMcSol": 13.228385782,
+    "simMcSol": 14.548860194,
+    "slippagePct": 9.982128082451167,
+    "pnl": 0.023055843549999976,
+    "counterfactualPnl": 0.10641218741315393
+   },
+   {
+    "mint": "BFBMD6bHrmhaBqJNNRxGqKpp6w1DYLK7tQKijgrSpimp",
+    "targetMcSol": 24.537459663,
+    "simMcSol": 24.873463439,
+    "slippagePct": 1.3693502938556348,
+    "pnl": 0.29098936760000005,
+    "counterfactualPnl": 0.3060931557464271
+   },
+   {
+    "mint": "6J37fzbhYQENhARoy6vjcB3GWhBxkDznqQ2zaFPrpump",
+    "targetMcSol": 12.537498957,
+    "simMcSol": 13.87449873,
+    "slippagePct": 10.664007052646797,
+    "pnl": -0.253280434775,
+    "counterfactualPnl": -0.19369854093488842
+   },
+   {
+    "mint": "2QMgq6mPSwSDkQm7cyaVtH4tRxeJw2dwVW2xmXH24mtF",
+    "targetMcSol": 8.635161089,
+    "simMcSol": 11.239459041,
+    "slippagePct": 30.15922835901133,
+    "pnl": -0.17788097687,
+    "counterfactualPnl": 0.013364427383708528
+   },
+   {
+    "mint": "2ahxSdaLsAF62ft6Fg39AYog59gUoemszjcHauVZpump",
+    "targetMcSol": 18.339360236,
+    "simMcSol": 19.659327579,
+    "slippagePct": 7.197455778249637,
+    "pnl": -0.251299847995,
+    "counterfactualPnl": -0.21094370250586156
+   },
+   {
+    "mint": "AxiQqyBkPXLsn9a92P25bsWdeHT7jjay2BhiXBCWpump",
+    "targetMcSol": 8.879391299,
+    "simMcSol": 10.200185175,
+    "slippagePct": 14.874824540605031,
+    "pnl": -0.1589095242400001,
+    "counterfactualPnl": -0.06176346187929756
+   },
+   {
+    "mint": "EQ7ppr1McKE9FGKbCTAYqvJRHRHuWp9T3Kv6tFfdpump",
+    "targetMcSol": 15.748434732,
+    "simMcSol": 15.886691037,
+    "slippagePct": 0.8779050575678541,
+    "pnl": -0.2179985178500001,
+    "counterfactualPnl": -0.21278374879617717
+   },
+   {
+    "mint": "BzxsCuauxanFbyoQ42JSafC31QtAdfAdhqDB2S28pump",
+    "targetMcSol": 7.241467294,
+    "simMcSol": 8.562299215,
+    "slippagePct": 18.239838245135612,
+    "pnl": 0.30796066051500004,
+    "counterfactualPnl": 0.5122396734020884
+   },
+   {
+    "mint": "HnqPxChu2L3ap3bSqYjynaCAoDsgZeNoj2vd3oovpump",
+    "targetMcSol": 8.839124238,
+    "simMcSol": 10.318949474,
+    "slippagePct": 16.74176305428687,
+    "pnl": 0.00757150958999998,
+    "counterfactualPnl": 0.14478222978599983
+   },
+   {
+    "mint": "TDWFy6rGq49Zp2YkeNQt4Z4WKLtQHtwmZLfaM2Spump",
+    "targetMcSol": 5.786994995,
+    "simMcSol": 6.586994995,
+    "slippagePct": 13.82410043020956,
+    "pnl": -0.00327834125500006,
+    "counterfactualPnl": 0.10852015305076543
+   },
+   {
+    "mint": "Bi15VfjcB7SVtMbK9E4qr4xQh3usNTKsVyfX1Zv5ttff",
+    "targetMcSol": 24.737133436,
+    "simMcSol": 25.537133436,
+    "slippagePct": 3.2340044656740994,
+    "pnl": -0.33227190991000005,
+    "counterfactualPnl": -0.3167574820533964
+   },
+   {
+    "mint": "ATPuYYvn3gnBRjfn7tMSdRngS9bB9UPT5qidSq36pump",
+    "targetMcSol": 13.287152123,
+    "simMcSol": 14.364352123,
+    "slippagePct": 8.107079606135999,
+    "pnl": -0.207840617685,
+    "counterfactualPnl": -0.1588609356127835
+   },
+   {
+    "mint": "7xMb3ruhgog7a4ZKFbddFh5eNqfufmvz5jdL5vbspump",
+    "targetMcSol": 8.368186541,
+    "simMcSol": 11.761157406,
+    "slippagePct": 40.546071103650846,
+    "pnl": -0.19493704775,
+    "counterfactualPnl": 0.05525773562357208
+   },
+   {
+    "mint": "D5qsHAjSFg1s9sRvduUTxBtcJCPr8zFcy6PVQskVpump",
+    "targetMcSol": 6.115542126,
+    "simMcSol": 6.915542126,
+    "slippagePct": 13.08142407520716,
+    "pnl": 0.607130869015,
+    "counterfactualPnl": 0.7927733961730249
+   },
+   {
+    "mint": "6qnh4WeAkqLpQr1tnbaKaG5XeUZRTfFa8KXZvgc6pump",
+    "targetMcSol": 9.487801406,
+    "simMcSol": 10.805002188,
+    "slippagePct": 13.883098155564394,
+    "pnl": -0.19648882266000006,
+    "counterfactualPnl": -0.11103680175141785
+   },
+   {
+    "mint": "FAyZhdeAvpeRWBkRtnrzvoojVFdhoUaeTCGDNaAMpump",
+    "targetMcSol": 18.957081419,
+    "simMcSol": 20.274568218,
+    "slippagePct": 6.949839850766942,
+    "pnl": 0.00872701407499999,
+    "counterfactualPnl": 0.06576622716519388
+   },
+   {
+    "mint": "Fe4XWermD2G3FMetzQpgi1WVD2g9wgzAFnzcZBrdpump",
+    "targetMcSol": 3.932098762,
+    "simMcSol": 4.932930464,
+    "slippagePct": 25.452862773236728,
+    "pnl": -0.15431694696500006,
+    "counterfactualPnl": 0.013082218006832267
+   },
+   {
+    "mint": "Ff5Z1EzPycgcBwTiS7CSuVNZgopJvrDxcD5uDP5Upump",
+    "targetMcSol": 8.246955558,
+    "simMcSol": 11.006475558,
+    "slippagePct": 33.4610751882022,
+    "pnl": -0.013865079885000003,
+    "counterfactualPnl": 0.25319944583797765
+   },
+   {
+    "mint": "FJE486j7HjW6LdbPpfdRRoH2uDpoU25Tb6j8P61Gpump",
+    "targetMcSol": 7.836950515,
+    "simMcSol": 9.157784548,
+    "slippagePct": 16.853928456890362,
+    "pnl": -0.18935055130000006,
+    "counterfactualPnl": -0.08440965867887978
+   },
+   {
+    "mint": "G2EMA1X9jTiqM54vaTo3qEKCXuErihrKB3gLVpSupump",
+    "targetMcSol": 10.619528436,
+    "simMcSol": 11.940103381,
+    "slippagePct": 12.43534449724977,
+    "pnl": -0.19261900292500006,
+    "counterfactualPnl": -0.11559684218822329
+   },
+   {
+    "mint": "6Ygu5mpvbLg3WS9oifTKGE5yRNsyy5Ard6i46Rwbpump",
+    "targetMcSol": 8.614604373,
+    "simMcSol": 9.414604373,
+    "slippagePct": 9.286555311899972,
+    "pnl": 0.03520931234500001,
+    "counterfactualPnl": 0.11388587374348577
+   },
+   {
+    "mint": "5g9WJUoMUdhC3rTYCjiqyDVas9nctbeqZX9uwAyTpump",
+    "targetMcSol": 11.887212151,
+    "simMcSol": 13.486531376,
+    "slippagePct": 13.454115268443822,
+    "pnl": -0.04379961502000007,
+    "counterfactualPnl": 0.059554950267838316
+   },
+   {
+    "mint": "A3KEuSTx7zpeAY4bjyo6BnAG7suM6siYqsNRoLgwpump",
+    "targetMcSol": 16.606825409,
+    "simMcSol": 18.144247747,
+    "slippagePct": 9.25777383777879,
+    "pnl": -0.23377499591500003,
+    "counterfactualPnl": -0.18024423276332355
+   },
+   {
+    "mint": "D9mWu6MmoF7mzynNRZjAPgf7VH4chLd1sMwTsy8rpump",
+    "targetMcSol": 7.982391404,
+    "simMcSol": 9.516926341,
+    "slippagePct": 19.224000169060105,
+    "pnl": 0.07681937949999991,
+    "counterfactualPnl": 0.24768601851771885
+   },
+   {
+    "mint": "BNzHW1CvMwncpjSVZExk7FS2YAykUv77D5HpGGTbpump",
+    "targetMcSol": 17.495278242,
+    "simMcSol": 25.877961662,
+    "slippagePct": 47.91397601140249,
+    "pnl": -0.1886594014250001,
+    "counterfactualPnl": 0.11000786344555807
+   },
+   {
+    "mint": "G9Cz5wwFPuPXkJxDphy877tnYHaHaQEykkr2NSutpump",
+    "targetMcSol": 6.823833207,
+    "simMcSol": 6.782177954,
+    "slippagePct": -0.6104377369199092,
+    "pnl": 0.05437927005499999,
+    "counterfactualPnl": 0.049090564045733004
+   },
+   {
+    "mint": "2to6AtcPztXKAn6YQyV7kouH53KRWipwHy1oHtpFpump",
+    "targetMcSol": 7.805643692,
+    "simMcSol": 9.340059256,
+    "slippagePct": 19.65777102499082,
+    "pnl": -0.30258548938,
+    "counterfactualPnl": -0.20244595131424287
+   },
+   {
+    "mint": "AwxKuUAre9AKuzDsWkPTqCyMo7mdjfuzTV9d7zumpump",
+    "targetMcSol": 13.009722045,
+    "simMcSol": 15.834256899,
+    "slippagePct": 21.710954655526614,
+    "pnl": -0.24185533900500006,
+    "counterfactualPnl": -0.11807149018546964
+   },
+   {
+    "mint": "EhpyCD5VkYqwqQ5cnM99Fc6UzsYp5woRmc1zpdwrpump",
+    "targetMcSol": 12.889291945,
+    "simMcSol": 13.689291945,
+    "slippagePct": 6.206702458239654,
+    "pnl": 0.22566999486,
+    "counterfactualPnl": 0.2900750839393909
+   },
+   {
+    "mint": "Db8Apdn6d75dbBzrfSaWXXanDXVwwqYBWGW5EhLZpump",
+    "targetMcSol": 8.840296135,
+    "simMcSol": 10.279129721,
+    "slippagePct": 16.275852799811204,
+    "pnl": -0.07655782995500005,
+    "counterfactualPnl": 0.0431416550692614
+   },
+   {
+    "mint": "5WG6waDC2RUWgewfSzxHZXdLiV7sXsMa1ZWF6vTLpump",
+    "targetMcSol": 13.435711245,
+    "simMcSol": 15.022224326,
+    "slippagePct": 11.808180840373513,
+    "pnl": -0.20292914764500009,
+    "counterfactualPnl": -0.13100895995291728
+   },
+   {
+    "mint": "h51oeaVSQ8bCAyFZfYGXyzSwgF7xgA5PpXogEBtpump",
+    "targetMcSol": 7.109876403,
+    "simMcSol": 8.545414486,
+    "slippagePct": 20.19076003057208,
+    "pnl": -0.02373852091500009,
+    "counterfactualPnl": 0.13541746274049035
+   },
+   {
+    "mint": "BQv1ys9u46nr33kRT6gbDs1iBKNhkBAwtQ1qv2Agpump",
+    "targetMcSol": 17.991508292,
+    "simMcSol": 20.091998023,
+    "slippagePct": 11.674895161146615,
+    "pnl": -0.23121456918500008,
+    "counterfactualPnl": -0.16340847902613517
+   },
+   {
+    "mint": "6iez2U2BNUVbKKEYNgVuuemJ3vxeu7qX3LaQCB6Rpump",
+    "targetMcSol": 10.66258739,
+    "simMcSol": 13.680791473,
+    "slippagePct": 28.306488590477088,
+    "pnl": -0.13284929847000002,
+    "counterfactualPnl": 0.05939441737073457
+   },
+   {
+    "mint": "F5VVPdcMQzeqPYCjZFZfNwT2Ysy5hXfc2pQ8Cc1Gpump",
+    "targetMcSol": 23.208277253,
+    "simMcSol": 24.010260395,
+    "slippagePct": 3.4555910085757584,
+    "pnl": -0.05183257074500003,
+    "counterfactualPnl": -0.025564293409542752
+   },
+   {
+    "mint": "AYyMBtCZnyC3f5BwwGB786JFaSwTguMxAXMseo53pump",
+    "targetMcSol": 18.491843508,
+    "simMcSol": 18.954176245,
+    "slippagePct": 2.500198191705358,
+    "pnl": -0.22354258148500006,
+    "counterfactualPnl": -0.20882997974833198
+   },
+   {
+    "mint": "Ef4bHpSWkKBjv6VnzKBG5Ug1yXiCMjJyGynbAwUbpump",
+    "targetMcSol": 9.853896021,
+    "simMcSol": 14.050902863,
+    "slippagePct": 42.59235974335027,
+    "pnl": -0.22026578297,
+    "counterfactualPnl": 0.031767783471914654
+   },
+   {
+    "mint": "CiVyXMZE5QpKr6HdpzzcVH3kQ5En6B6xwz7jNiykpump",
+    "targetMcSol": 12.479160346,
+    "simMcSol": 13.504564307,
+    "slippagePct": 8.216930727464188,
+    "pnl": -0.22076986460000003,
+    "counterfactualPnl": -0.17218889393428932
+   }
+  ],
+  "meanSlippagePct": 17.142674786123862,
+  "medianSlippagePct": 13.461917905808916,
+  "p10SlippagePct": 3.4555910085757584,
+  "p90SlippagePct": 38.6957328142462,
+  "adverseCount": 67,
+  "tradeCount": 68,
+  "counterfactualPnl": 2.4018389188506353,
+  "actualPnl": -5.930169453835004,
+  "latencyCost": 8.332008372685639
+ }
+}
