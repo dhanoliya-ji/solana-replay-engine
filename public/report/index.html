@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solana Replay Engine — Results</title>
+    <meta
+      name="description"
+      content="Does mirroring a profitable Solana wallet one slot late make money? Replay results across 26,685 bonding-curve trades."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --surface: #fcfcfb;
+        --surface-2: #f4f3f0;
+        --text-primary: #0b0b0b;
+        --text-secondary: #52514e;
+        --muted: #6b6a66;
+        --border: #e6e5e1;
+        --pos: #2a78d6;
+        --neg: #e34948;
+        --accent: #2a78d6;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme='light']) {
+          color-scheme: dark;
+          --surface: #1a1a19;
+          --surface-2: #232321;
+          --text-primary: #ffffff;
+          --text-secondary: #c3c2b7;
+          --muted: #9d9c93;
+          --border: #383835;
+          --pos: #3987e5;
+          --neg: #e66767;
+          --accent: #3987e5;
+        }
+      }
+      :root[data-theme='dark'] {
+        color-scheme: dark;
+        --surface: #1a1a19;
+        --surface-2: #232321;
+        --text-primary: #ffffff;
+        --text-secondary: #c3c2b7;
+        --muted: #9d9c93;
+        --border: #383835;
+        --pos: #3987e5;
+        --neg: #e66767;
+        --accent: #3987e5;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--surface);
+        color: var(--text-primary);
+        font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 56px 16px 96px;
+      }
+      header.masthead {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 20px;
+        margin-bottom: 8px;
+      }
+      header.masthead .eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0;
+      }
+
+      .cell {
+        margin: 0;
+      }
+      .cell:empty {
+        display: none;
+      }
+
+      h1 {
+        font-size: 34px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        margin: 32px 0 16px;
+      }
+      h2 {
+        font-size: 24px;
+        letter-spacing: -0.01em;
+        margin: 52px 0 12px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+      }
+      h3 {
+        font-size: 18px;
+        margin: 36px 0 10px;
+      }
+      p {
+        color: var(--text-secondary);
+        margin: 0 0 14px;
+      }
+      strong {
+        color: var(--text-primary);
+        font-weight: 620;
+      }
+      ol,
+      ul {
+        color: var(--text-secondary);
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
+        font-size: 0.88em;
+        background: var(--surface-2);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 1px 5px;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid var(--border);
+        margin: 40px 0 20px;
+      }
+      small {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.55;
+        display: block;
+      }
+
+      /* Stat tiles */
+      .tiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 20px 0 8px;
+      }
+      .tile {
+        background: var(--surface);
+        padding: 14px 16px;
+      }
+      .tile-label {
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+      .tile-value {
+        font-size: 21px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        font-variant-numeric: tabular-nums;
+      }
+      .tile-value.pos {
+        color: var(--pos);
+      }
+      .tile-value.neg {
+        color: var(--neg);
+      }
+
+      figure {
+        margin: 22px 0 8px;
+      }
+      svg {
+        max-width: 100%;
+        height: auto;
+      }
+      .observablehq {
+        margin: 0;
+      }
+
+      .status {
+        border: 1px solid var(--border);
+        background: var(--surface-2);
+        border-radius: 8px;
+        padding: 14px 16px;
+        color: var(--text-secondary);
+        font-size: 14px;
+      }
+      .status code {
+        background: var(--surface);
+      }
+
+      @media (max-width: 640px) {
+        main {
+          padding: 32px 16px 72px;
+        }
+        h1 {
+          font-size: 27px;
+        }
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <header class="masthead">
+        <p class="eyebrow">Solana Replay Engine &middot; Results report</p>
+      </header>
+      <div id="report">
+        <div class="status" id="status">Running the notebook&hellip;</div>
+      </div>
+    </main>
+
+    <script type="module">
+      /**
+       * Runs report.ojs as a live Observable notebook.
+       *
+       * Named cells (`name = ...`) are data and helpers: they evaluate but render
+       * nothing. Anonymous cells are the report's output and each get a container
+       * in source order. That split is what makes the .ojs file read as a document
+       * rather than as a notebook dump.
+       */
+      import { Runtime, Inspector } from 'https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js';
+      import { Interpreter, parser } from 'https://cdn.jsdelivr.net/npm/@alex.garcia/unofficial-observablehq-compiler@0.6.0-alpha.9/+esm';
+
+      const root = document.getElementById('report');
+      const status = document.getElementById('status');
+
+      /**
+       * Directory this page lives in, whichever URL form was used to reach it
+       * (/report, /report/, /report/index.html, or any subpath deployment).
+       * Sibling files are fetched against it rather than against the document
+       * URL, which differs between those forms.
+       */
+      const BASE =
+        location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '') + '/';
+
+      const fail = (message, detail) => {
+        status.innerHTML = `<strong>${message}</strong>`;
+        if (detail) status.innerHTML += `<br /><br />${detail}`;
+      };
+
+      /** Markdown template tag, matching Observable's `md`. */
+      function md(strings, ...values) {
+        let source = strings[0];
+        for (let i = 0; i < values.length; i++) source += values[i] + strings[i + 1];
+        const container = document.createElement('div');
+        container.innerHTML = marked.parse(source, { breaks: false });
+        return container;
+      }
+
+      /**
+       * HTML template tag, matching Observable's `html`.
+       *
+       * The single root element is detached from its wrapper before being
+       * returned: the inspector refuses to insert a node that still has a
+       * parent, and silently renders it as an inspected object instead.
+       */
+      function html(strings, ...values) {
+        let source = strings[0];
+        for (let i = 0; i < values.length; i++) source += values[i] + strings[i + 1];
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = source.trim();
+        if (wrapper.children.length !== 1) return wrapper;
+        const only = wrapper.firstElementChild;
+        wrapper.removeChild(only);
+        return only;
+      }
+
+      try {
+        const response = await fetch(BASE + 'report.ojs');
+        if (!response.ok) throw new Error(`report.ojs → HTTP ${response.status}`);
+        const source = await response.text();
+
+        const ast = parser.parseModule(source);
+
+        const runtime = new Runtime();
+        const main = runtime.module();
+        main.define('Plot', [], () => Plot);
+        main.define('d3', [], () => d3);
+        main.define('md', [], () => md);
+        main.define('html', [], () => html);
+        main.define('metricsUrl', [], () => BASE + 'metrics.json');
+
+        status.remove();
+
+        const interpreter = new Interpreter();
+        const errors = [];
+
+        for (const cell of ast.cells) {
+          const cellSource = source.slice(cell.start, cell.end);
+          const isOutput = cell.id === null || cell.id === undefined;
+
+          let observer;
+          if (isOutput) {
+            const container = document.createElement('div');
+            container.className = 'cell';
+            root.appendChild(container);
+            observer = Inspector.into(container);
+          } else {
+            observer = () => ({
+              pending() {},
+              fulfilled() {},
+              rejected(error) {
+                errors.push(`${cell.id?.name ?? 'cell'}: ${error?.message ?? error}`);
+                console.error('[report.ojs]', cell.id?.name, error);
+              }
+            });
+          }
+
+          await interpreter.cell(cellSource, main, observer);
+        }
+
+        // Surface data-cell failures, which would otherwise fail silently.
+        setTimeout(() => {
+          if (!errors.length) return;
+          const box = document.createElement('div');
+          box.className = 'status';
+          box.innerHTML =
+            `<strong>${errors.length} cell(s) failed.</strong><br /><br />` +
+            errors.map((e) => `<code>${e}</code>`).join('<br />');
+          root.prepend(box);
+        }, 1200);
+      } catch (error) {
+        console.error(error);
+        fail(
+          'Could not run the report.',
+          `<code>${error.message}</code><br /><br />This page has to be served over HTTP — ` +
+            'opening the file directly from disk blocks the notebook fetch. Run ' +
+            '<code>npm run dev</code> and open <code>/report/</code>.'
+        );
+      }
+    </script>
+  </body>
+</html>
