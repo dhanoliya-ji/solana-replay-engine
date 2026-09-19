@@ -15,9 +15,7 @@
     "typecheck": "tsc --noEmit",
     "sim": "node engine/simulateCopyTradingMcTpSlTrail.js data/sample-data.json",
     "report:data": "node scripts/export-metrics.js",
-    "report": "quarto render report/report.qmd && node -e \"require('fs').copyFileSync('report/report.html','public/report/index.html')\"",
-    "report:preview": "quarto preview report/report.qmd",
-    "docs": "quarto render README.qmd && quarto render PROBLEM_STATEMENT.qmd"
+    "report": "jupyter nbconvert --execute --inplace --to notebook report/analysis.ipynb"
   },
   "dependencies": {
     "lightweight-charts": "^5.2.0",

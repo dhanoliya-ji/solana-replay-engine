@@ -23,12 +23,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# quarto render artifacts. The published output is public/report/index.html,
-# copied from this intermediate, so the intermediate itself is not tracked.
-/.quarto/
-/report/.quarto/
-/report/report.html
-*_files/
+# jupyter
+.ipynb_checkpoints/
 
 # datasets: only the reproducible sample is tracked.
 # Full captures and simulation outputs stay local.
