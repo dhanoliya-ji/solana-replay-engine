@@ -23,6 +23,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# observable notebook build output
+/observable/dist/
+/.observable/
+
 # datasets: only the reproducible sample is tracked.
 # Full captures and simulation outputs stay local.
 /data/*.json

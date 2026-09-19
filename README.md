@@ -208,6 +208,22 @@ update together. Nothing in it is hand-written.
 Both fetch `metrics.json` over HTTPS from this repository rather than from a local path
 or a file attachment, so a pasted notebook works with no further setup.
 
+**observablehq.com** has no multi-cell import, so `report-observable.ojs` is pasted a
+cell at a time: open a new notebook, paste a numbered block, press Shift+Enter, repeat.
+Cell order does not matter — Observable resolves by dependency, not position.
+
+**Notebooks 2.0** runs the single HTML file locally, on any platform:
+
+```bash
+npm run notebook          # preview at http://localhost:5173/report-notebook
+npm run notebook:build    # static site in observable/dist/
+```
+
+Observable Desktop opens the same file directly, but is macOS-only at present; the CLI
+above is the cross-platform path. The default template pulls its typography from the
+`@fontsource-variable/*` packages, which is why they are devDependencies — running
+`notebook-kit` through `npx` alone fails to resolve them.
+
 ## Milestones
 
 | # | Milestone | What it unlocked |
