@@ -17,3 +17,7 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      # The free plan has 512 MB; without a cap the Next build can be
+      # OOM-killed, which leaves no process listening and no open port.
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=460
