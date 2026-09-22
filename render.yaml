@@ -1,0 +1,19 @@
+# Render Blueprint — the Next.js analysis dashboard.
+#
+# The replay results are committed to the repo, so the dashboard needs no
+# database and no RPC access at runtime. `next start` reads PORT from the
+# environment, which is what Render injects.
+services:
+  - type: web
+    name: solana-replay-engine
+    runtime: node
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
