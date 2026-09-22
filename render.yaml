@@ -13,7 +13,9 @@ services:
     # `npm ci` refuses to run: the lockfile was generated on Windows and so
     # omits the Linux-only optional deps (@emnapi/*) that npm resolves here.
     # `npm install` reconciles that instead of failing the build.
-    buildCommand: npm install --no-audit --no-fund && npm run build
+    # --include=dev because tailwindcss/postcss are devDependencies that the
+    # Next build needs, and NODE_ENV=production would otherwise skip them.
+    buildCommand: npm install --include=dev --no-audit --no-fund && npm run build
     startCommand: npm start
     healthCheckPath: /
     autoDeploy: true
