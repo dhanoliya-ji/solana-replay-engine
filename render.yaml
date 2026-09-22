@@ -10,7 +10,10 @@ services:
     plan: free
     region: oregon
     branch: main
-    buildCommand: npm ci && npm run build
+    # `npm ci` refuses to run: the lockfile was generated on Windows and so
+    # omits the Linux-only optional deps (@emnapi/*) that npm resolves here.
+    # `npm install` reconciles that instead of failing the build.
+    buildCommand: npm install --no-audit --no-fund && npm run build
     startCommand: npm start
     healthCheckPath: /
     autoDeploy: true
@@ -19,5 +22,9 @@ services:
         value: production
       # The free plan has 512 MB; without a cap the Next build can be
       # OOM-killed, which leaves no process listening and no open port.
+      # engines only says >=20, so Render otherwise picks the newest Node
+      # (26.x), which this Next version is not tested against.
+      - key: NODE_VERSION
+        value: 20.18.0
       - key: NODE_OPTIONS
         value: --max-old-space-size=460
