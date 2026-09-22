@@ -22,13 +22,11 @@ const config: Config = {
       }
     }
   },
-  plugins: [
-    require('tailwind-motionkit')({
-      duration: '1s',
-      delay: '200ms',
-      iterationCount: '2'
-      })
-  ]
+  // tailwind-motionkit was removed: it is no longer published to the npm
+  // registry (404 on install), so the project could not build anywhere. None of
+  // its utilities were used -- the only animation classes in src/ are
+  // animate-ping and animate-pulse, which Tailwind provides itself.
+  plugins: []
 };
 
 export default config;
